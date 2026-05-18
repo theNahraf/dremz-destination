@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dremz Destination — Explore. Experience. Escape.</title>
+  <meta name="description" content="Dremz Destination crafts unforgettable, 100% customizable travel experiences. Explore premium tour packages to Kashmir, Goa, Kerala, Bali, Europe & more. 10+ years, 5000+ happy travelers.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { 900: '#0A1628', 800: '#132240' },
+            teal: { 500: '#0E7490', 400: '#14B8A6' },
+            gold: { 500: '#F59E0B', 400: '#FBBF24' }
+          },
+          fontFamily: {
+            heading: ['Playfair Display', 'serif'],
+            body: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-body">
+
+  <!-- Main Content -->
+  <div id="main-content">
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=1920&q=80')"></div>
+
+      <div class="relative z-10 text-center px-4 max-w-5xl mx-auto pt-24 sm:pt-16 md:pt-0">
+        <div data-aos="fade-down" data-aos-delay="200">
+          <p class="text-amber-400 font-semibold tracking-[4px] uppercase text-sm mb-4 font-body">Welcome to Dremz Destination</p>
+        </div>
+
+        <h1 class="text-white font-heading font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-6" data-aos="fade-up" data-aos-delay="400">
+          Your Dream Trip<br>
+          <span class="gradient-text" id="typed-text">Starts Here</span>
+          <span class="typewriter-cursor"></span>
+        </h1>
+
+        <p class="text-white/70 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light" data-aos="fade-up" data-aos-delay="600">
+          Handcrafted journeys to the world's most breathtaking destinations. 100% customizable, 100% unforgettable.
+        </p>
+
+        <!-- Search Bar -->
+        <div class="search-bar max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="800">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            <div>
+              <label class="text-white/50 text-xs font-semibold mb-1 block text-left">Destination</label>
+              <select class="search-input" id="hero-destination">
+                <option value="">Where to?</option>
+                <option>Kashmir</option>
+                <option>Goa</option>
+                <option>Kerala</option>
+                <option>Rajasthan</option>
+                <option>Bali</option>
+                <option>Maldives</option>
+                <option>Europe</option>
+                <option>Thailand</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-white/50 text-xs font-semibold mb-1 block text-left">Travel Date</label>
+              <input type="date" class="search-input" id="hero-date">
+            </div>
+            <div>
+              <label class="text-white/50 text-xs font-semibold mb-1 block text-left">Travelers</label>
+              <select class="search-input" id="hero-travelers">
+                <option value="">How many?</option>
+                <option>1 Person</option>
+                <option>2 People</option>
+                <option>3-5 People</option>
+                <option>6-10 People</option>
+                <option>10+ Group</option>
+              </select>
+            </div>
+            <div class="flex items-end">
+              <button onclick="searchTrip()" class="btn-gold w-full justify-center" id="hero-search-btn">
+                <span>Search</span>
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="mt-16 animate-bounce" data-aos="fade-up" data-aos-delay="1200">
+          <a href="#destinations-section" class="text-white/40 hover:text-white/70 transition-colors">
+            <i class="fas fa-chevron-down text-2xl"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED DESTINATIONS CAROUSEL ===== -->
+    <section class="py-20 bg-white" id="destinations-section">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-14" data-aos="fade-up">
+          <p class="section-subtitle">Trending Now</p>
+          <h2 class="section-title">Featured Destinations</h2>
+          <p class="section-desc mx-auto mt-3">Discover the world's most captivating places, handpicked by our travel experts.</p>
+        </div>
+
+        <div class="swiper destinations-swiper" data-aos="fade-up" data-aos-delay="200">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="dest-card">
+                <img src="https://images.unsplash.com/photo-1597074866923-dc0589150a53?w=600&q=80" alt="Kashmir" loading="lazy">
+                <div class="dest-overlay">
+                  <p class="text-amber-400 text-xs font-semibold tracking-wider uppercase mb-1">India</p>
+                  <h3 class="text-white text-xl font-heading font-bold">Kashmir</h3>
+                  <p class="text-white/60 text-sm mt-1">Paradise on Earth</p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="dest-card">
+                <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=600&q=80" alt="Goa" loading="lazy">
+                <div class="dest-overlay">
+                  <p class="text-amber-400 text-xs font-semibold tracking-wider uppercase mb-1">India</p>
+                  <h3 class="text-white text-xl font-heading font-bold">Goa</h3>
+                  <p class="text-white/60 text-sm mt-1">Sun, Sand & Serenity</p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="dest-card">
+                <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600&q=80" alt="Kerala" loading="lazy">
+                <div class="dest-overlay">
+                  <p class="text-amber-400 text-xs font-semibold tracking-wider uppercase mb-1">India</p>
+                  <h3 class="text-white text-xl font-heading font-bold">Kerala</h3>
+                  <p class="text-white/60 text-sm mt-1">God's Own Country</p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <div class="dest-card">
+                <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80" alt="Bali" loading="lazy">
+                <div class="dest-overlay">
+                  <p class="text-amber-400 text-xs font-semibold tracking-wider uppercase mb-1">Indonesia</p>
+                  <h3 class="text-white text-xl font-heading font-bold">Bali</h3>
+                  <p class="text-white/60 text-sm mt-1">Island of the Gods</p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 5 -->
+            <div class="swiper-slide">
+              <div class="dest-card">
+                <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600&q=80" alt="Maldives" loading="lazy">
+                <div class="dest-overlay">
+                  <p class="text-amber-400 text-xs font-semibold tracking-wider uppercase mb-1">Maldives</p>
+                  <h3 class="text-white text-xl font-heading font-bold">Maldives</h3>
+                  <p class="text-white/60 text-sm mt-1">Tropical Paradise</p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 6 -->
+            <div class="swiper-slide">
+              <div class="dest-card">
+                <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=600&q=80" alt="Europe" loading="lazy">
+                <div class="dest-overlay">
+                  <p class="text-amber-400 text-xs font-semibold tracking-wider uppercase mb-1">Europe</p>
+                  <h3 class="text-white text-xl font-heading font-bold">Italy</h3>
+                  <p class="text-white/60 text-sm mt-1">Art, Culture & Romance</p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 7 -->
+            <div class="swiper-slide">
+              <div class="dest-card">
+                <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?w=600&q=80" alt="Thailand" loading="lazy">
+                <div class="dest-overlay">
+                  <p class="text-amber-400 text-xs font-semibold tracking-wider uppercase mb-1">Southeast Asia</p>
+                  <h3 class="text-white text-xl font-heading font-bold">Thailand</h3>
+                  <p class="text-white/60 text-sm mt-1">Land of Smiles</p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 8 -->
+            <div class="swiper-slide">
+              <div class="dest-card">
+                <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=600&q=80" alt="Rajasthan" loading="lazy">
+                <div class="dest-overlay">
+                  <p class="text-amber-400 text-xs font-semibold tracking-wider uppercase mb-1">India</p>
+                  <h3 class="text-white text-xl font-heading font-bold">Rajasthan</h3>
+                  <p class="text-white/60 text-sm mt-1">Royal Heritage</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination mt-8"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHY CHOOSE US ===== -->
+    <section class="py-20 bg-navy-900 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-5">
+        <div class="absolute top-10 left-10 w-72 h-72 bg-teal-500 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-10 right-10 w-72 h-72 bg-amber-500 rounded-full blur-[120px]"></div>
+      </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-14" data-aos="fade-up">
+          <p class="section-subtitle">Why Travelers Trust Us</p>
+          <h2 class="section-title !text-white">Why Choose Dremz Destination</h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="glass-card text-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center mx-auto mb-5 text-navy-900 text-2xl">
+              <i class="fas fa-calendar-check"></i>
+            </div>
+            <h3 class="text-white font-heading text-xl font-bold mb-2">10+ Years</h3>
+            <p class="text-white/50 text-sm">Of crafting unforgettable journeys across the globe</p>
+          </div>
+          <div class="glass-card text-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center mx-auto mb-5 text-white text-2xl">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3 class="text-white font-heading text-xl font-bold mb-2">5000+ Travelers</h3>
+            <p class="text-white/50 text-sm">Happy adventurers who trusted us with their dreams</p>
+          </div>
+          <div class="glass-card text-center" data-aos="fade-up" data-aos-delay="300">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center mx-auto mb-5 text-navy-900 text-2xl">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3 class="text-white font-heading text-xl font-bold mb-2">24/7 Support</h3>
+            <p class="text-white/50 text-sm">Round-the-clock assistance wherever you are</p>
+          </div>
+          <div class="glass-card text-center" data-aos="fade-up" data-aos-delay="400">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center mx-auto mb-5 text-white text-2xl">
+              <i class="fas fa-sliders-h"></i>
+            </div>
+            <h3 class="text-white font-heading text-xl font-bold mb-2">100% Customizable</h3>
+            <p class="text-white/50 text-sm">Every trip tailored to your unique preferences</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== POPULAR TOUR PACKAGES ===== -->
+    <section class="py-20 bg-gray-50" id="packages-section">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-14" data-aos="fade-up">
+          <p class="section-subtitle">Curated For You</p>
+          <h2 class="section-title">Popular Tour Packages</h2>
+          <p class="section-desc mx-auto mt-3">Expertly designed itineraries at unbeatable prices. Your adventure awaits.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="home-packages-grid">
+          <!-- Package cards injected by JS -->
+        </div>
+
+        <div class="text-center mt-12" data-aos="fade-up">
+          <a href="packages.html" class="btn-teal text-base">
+            <span>View All Packages</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-14" data-aos="fade-up">
+          <p class="section-subtitle">Traveler Stories</p>
+          <h2 class="section-title">What Our Travelers Say</h2>
+        </div>
+
+        <div class="swiper testimonials-swiper" data-aos="fade-up" data-aos-delay="200">
+          <div class="swiper-wrapper" id="testimonials-wrapper">
+            <!-- Testimonials injected by JS -->
+          </div>
+          <div class="swiper-pagination mt-8"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PARTNER LOGOS ===== -->
+    <section class="py-12 bg-gray-50 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4">
+        <p class="text-center text-gray-400 text-sm font-semibold tracking-wider uppercase mb-8">Trusted By Leading Travel Partners</p>
+        <div class="relative overflow-hidden">
+          <div class="logo-strip flex items-center gap-16">
+            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-plane text-2xl"></i><span class="font-semibold text-lg">SkyWings Airlines</span></div>
+            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-hotel text-2xl"></i><span class="font-semibold text-lg">Grand Hotels</span></div>
+            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-ship text-2xl"></i><span class="font-semibold text-lg">OceanCruise</span></div>
+            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-shield-alt text-2xl"></i><span class="font-semibold text-lg">TravelGuard</span></div>
+            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-car text-2xl"></i><span class="font-semibold text-lg">DriveAway</span></div>
+            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-mountain text-2xl"></i><span class="font-semibold text-lg">PeakAdventures</span></div>
+            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-globe text-2xl"></i><span class="font-semibold text-lg">WorldPass</span></div>
+            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-umbrella-beach text-2xl"></i><span class="font-semibold text-lg">IslandEscape</span></div>
+            <!-- Duplicate for seamless scroll -->
+            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-plane text-2xl"></i><span class="font-semibold text-lg">SkyWings Airlines</span></div>
+            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-hotel text-2xl"></i><span class="font-semibold text-lg">Grand Hotels</span></div>
+            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-ship text-2xl"></i><span class="font-semibold text-lg">OceanCruise</span></div>
+            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-shield-alt text-2xl"></i><span class="font-semibold text-lg">TravelGuard</span></div>
+            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-car text-2xl"></i><span class="font-semibold text-lg">DriveAway</span></div>
+            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-mountain text-2xl"></i><span class="font-semibold text-lg">PeakAdventures</span></div>
+            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-globe text-2xl"></i><span class="font-semibold text-lg">WorldPass</span></div>
+            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-umbrella-beach text-2xl"></i><span class="font-semibold text-lg">IslandEscape</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA BANNER ===== -->
+    <section class="cta-banner py-20">
+      <div class="max-w-4xl mx-auto px-4 text-center relative z-10" data-aos="zoom-in">
+        <h2 class="text-white font-heading text-3xl sm:text-4xl md:text-5xl font-bold mb-6">Ready to Make Your<br><span class="gradient-text">Travel Dreams Real?</span></h2>
+        <p class="text-white/60 text-lg mb-10 max-w-xl mx-auto">Let our experts craft the perfect itinerary for you. No templates, no cookie-cutter trips — just pure magic.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://wa.me/918178390282?text=Hi!%20I%20want%20to%20plan%20my%20dream%20trip.%20Please%20help!" target="_blank" class="btn-gold text-lg px-8 py-4 justify-center">
+            <span>Plan My Dream Trip</span>
+            <i class="fab fa-whatsapp text-xl"></i>
+          </a>
+          <a href="packages.html" class="btn-outline text-lg px-8 py-4 justify-center">
+            <span>Browse Packages</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /main-content -->
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
