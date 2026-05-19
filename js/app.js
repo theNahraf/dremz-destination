@@ -123,11 +123,11 @@ function renderNavbar() {
     `<a href="${l.href}" class="block text-white/80 hover:text-amber-400 py-3 text-lg font-medium border-b border-white/10 transition-colors ${page === l.id ? 'text-amber-400' : ''}">${l.label}</a>`
   ).join('');
 
-  const nav = document.createElement('nav');
-  nav.className = 'navbar';
-  nav.id = 'main-navbar';
-  nav.innerHTML = `
-    <div class="max-w-7xl mx-auto flex items-center justify-between">
+  const header = document.createElement('header');
+  header.className = 'navbar';
+  header.id = 'main-navbar';
+  header.innerHTML = `
+    <nav class="max-w-7xl mx-auto flex items-center justify-between" aria-label="Main navigation">
       <a href="index.html" class="flex-shrink-0" aria-label="Dremz Destination Home">
         ${LOGO_SVG.horizontal}
       </a>
@@ -146,9 +146,9 @@ function renderNavbar() {
       <button class="lg:hidden text-white text-2xl p-2" id="hamburger-btn" aria-label="Open menu">
         <i class="fas fa-bars"></i>
       </button>
-    </div>
+    </nav>
   `;
-  document.body.prepend(nav);
+  document.body.prepend(header);
 
   // Mobile menu
   const mobileOverlay = document.createElement('div');
@@ -298,11 +298,16 @@ function renderFooter() {
           </div>
           <div class="flex items-center gap-2 text-white/50 text-xs">
             <i class="fas fa-award text-amber-400 text-lg"></i>
-            <span>100% Customizable Trips</span>
+            <span>5-Star Rated</span>
           </div>
         </div>
-        <div class="text-center text-white/40 text-sm">
-          <p>&copy; ${new Date().getFullYear()} Dremz Destination. All rights reserved. | Crafted with <i class="fas fa-heart text-red-400"></i> for travelers</p>
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4 pt-6 border-t border-white/5">
+          <p class="text-white/40 text-sm">© ${new Date().getFullYear()} Dremz Destination. All rights reserved. <span class="ml-2">Last updated: May 2026</span></p>
+          <div class="flex gap-4 text-sm text-white/40">
+            <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+            <a href="#" class="hover:text-white transition-colors">Sitemap</a>
+          </div>
         </div>
       </div>
     </div>

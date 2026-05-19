@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Destinations — Dremz Destination</title>
+  <!-- Sitemap -->
+  <!-- Sitemap: https://dremzdestination.com/sitemap.xml -->
+
+  <!-- SEO Meta Tags -->
+  <title>Top Destinations — Dremz Destination | India & Beyond</title>
   <meta name="description" content="Explore stunning destinations across India, Southeast Asia, Europe & more with Dremz Destination. Find your perfect getaway.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://dremzdestination.com/destinations.html">
+  <meta name="theme-color" content="#0A1628">
+  <meta name="geo.region" content="IN-DL">
+  <meta name="geo.placename" content="New Delhi">
+  <link rel="alternate" hreflang="en-in" href="https://dremzdestination.com/destinations.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Top Destinations — Dremz Destination | India & Beyond">
+  <meta property="og:description" content="Explore stunning destinations across India, Southeast Asia, Europe & more with Dremz Destination.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1488085061387-422e29b40080?w=1200&h=630&fit=crop">
+  <meta property="og:url" content="https://dremzdestination.com/destinations.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Dremz Destination">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Top Destinations — Dremz Destination">
+  <meta name="twitter:description" content="Explore stunning destinations across India, Southeast Asia, Europe & more with Dremz Destination.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1488085061387-422e29b40080?w=1200&h=630&fit=crop">
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://dremzdestination.com/"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Destinations",
+      "item": "https://dremzdestination.com/destinations.html"
+    }]
+  }
+  </script>
+
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Resource Hints & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>tailwind.config={theme:{extend:{colors:{navy:{900:'#0A1628',800:'#132240'},teal:{500:'#0E7490',400:'#14B8A6'},gold:{500:'#F59E0B',400:'#FBBF24'}},fontFamily:{heading:['Playfair Display','serif'],body:['Inter','sans-serif']}}}}</script>
@@ -14,9 +63,9 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="font-body">
-<div id="main-content">
+<main id="main-content">
   <section class="relative py-40 pb-20 bg-navy-900 overflow-hidden">
-    <div class="absolute inset-0"><img src="https://images.unsplash.com/photo-1488085061387-422e29b40080?w=1920&q=80" class="w-full h-full object-cover opacity-30"><div class="absolute inset-0 bg-gradient-to-b from-navy-900/60 to-navy-900"></div></div>
+    <div class="absolute inset-0"><img src="https://images.unsplash.com/photo-1488085061387-422e29b40080?w=1920&q=80" alt="Beautiful travel destinations across the globe" width="1920" height="1080" fetchpriority="high" class="w-full h-full object-cover opacity-30"><div class="absolute inset-0 bg-gradient-to-b from-navy-900/60 to-navy-900"></div></div>
     <div class="relative z-10 max-w-4xl mx-auto text-center px-4">
       <p class="section-subtitle !text-amber-400" data-aos="fade-down">Explore The World</p>
       <h1 class="text-white font-heading text-4xl sm:text-5xl md:text-6xl font-bold mb-4" data-aos="fade-up">Our Destinations</h1>
@@ -32,9 +81,9 @@
 
   <!-- Destination Detail (hidden by default) -->
   <section class="hidden bg-gray-50 py-16" id="dest-detail"></section>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script src="js/app.js"></script>
-<script src="js/destinations.js"></script>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+<script src="js/app.js" defer></script>
+<script src="js/destinations.js" defer></script>
 </body>
 </html>
