@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const result = await response.json();
 
       if (result.success) {
-        showToast('success', 'Message Sent! ✈️', 'Redirecting to WhatsApp...');
+        showToast('success', 'Message Sent! ✈️', 'Our travel expert will reach out within 2 hours!');
         form.reset();
         
         // Construct a clean WhatsApp message using the formatted data
@@ -52,14 +52,18 @@ document.addEventListener('DOMContentLoaded', () => {
 *Destination:* ${data['Destination']}
 *Dates:* ${data['Travel Dates']}
 *Travelers:* ${data['Number of Travelers']}
-*Message:* ${data['Message']}
+*Message:* ${data['Message']}`;
 
-Hi! I just submitted this inquiry on your website.`;
-
-        // Redirect to WhatsApp after a brief delay so they see the success toast
-        setTimeout(() => {
-          window.location.href = waLink(waMessage);
-        }, 1500);
+        // SILENT WHATSAPP NOTIFICATION USING CALLMEBOT
+        // To make this work, the owner must fill in their API key below.
+        const CALLMEBOT_API_KEY = "YOUR_CALLMEBOT_API_KEY"; // <-- Add your key here
+        const OWNER_PHONE = "918178390282"; // Your exact WhatsApp number
+        
+        if (CALLMEBOT_API_KEY !== "YOUR_CALLMEBOT_API_KEY") {
+          const url = `https://api.callmebot.com/whatsapp.php?phone=${OWNER_PHONE}&text=${encodeURIComponent(waMessage)}&apikey=${CALLMEBOT_API_KEY}`;
+          // Fire and forget fetch request
+          fetch(url, { mode: 'no-cors' }).catch(err => console.error("WhatsApp notification failed", err));
+        }
 
       } else {
         showToast('error', 'Oops!', 'Something went wrong. Please try WhatsApp instead.');
