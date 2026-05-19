@@ -13,7 +13,22 @@ document.addEventListener('DOMContentLoaded', () => {
     submitBtn.disabled = true;
 
     const formData = new FormData(form);
-    const data = Object.fromEntries(formData);
+    const rawData = Object.fromEntries(formData);
+
+    // Create a beautifully formatted object for the email layout
+    const data = {
+      access_key: rawData.access_key,
+      subject: rawData.subject,
+      from_name: rawData.from_name,
+      botcheck: rawData.botcheck,
+      "Full Name": rawData.name,
+      "Email Address": rawData.email,
+      "Phone Number": rawData.phone,
+      "Destination": rawData.destination || 'Not selected',
+      "Travel Dates": rawData.travel_dates || 'Not selected',
+      "Number of Travelers": rawData.travelers || 'Not selected',
+      "Message": rawData.message || 'No message provided'
+    };
 
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
