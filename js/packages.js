@@ -12,7 +12,7 @@ const allPackages = [
     inclusions: ['4-star resort stay', 'Daily breakfast', 'AC vehicle', 'Sightseeing', 'Airport transfers'],
     exclusions: ['Flights', 'Water sports fees', 'Meals other than breakfast', 'Personal expenses']
   },
-  
+
   {
     id: 6, title: 'Discover Our Ravishing Rajasthan Vacation', dest: 'Rajasthan', image: 'https://images.unsplash.com/photo-1477587458883-47145ed94245?w=600&q=80', duration: '3N/4D', price: '₹9,999', rating: 4.7, reviews: 120, highlights: ['Jaipur Forts', 'City Tour'], type: 'family', badge: 'Trending',
     itinerary: [{ day: 'Day 1', title: 'Arrival', desc: 'Arrive in Jaipur.' }, { day: 'Day 2', title: 'Jaipur', desc: 'City tour.' }, { day: 'Day 3', title: 'Departure', desc: 'Leave for onward journey.' }],
@@ -28,7 +28,7 @@ const allPackages = [
     itinerary: [{ day: 'Day 1', title: 'Arrival', desc: 'Arrive.' }],
     inclusions: ['Hotels', 'Breakfast', 'Transport'], exclusions: ['Flights']
   },
- 
+
   {
     id: 12, title: 'Heaven On Earth: Uttarakhand', dest: 'Uttarakhand', image: 'https://images.unsplash.com/photo-1626714485864-42b43b6771e3?w=600&q=80', duration: '8N/9D', price: '₹16,000', rating: 4.8, reviews: 230, highlights: ['Nainital', 'Mussoorie', 'Rishikesh'], type: 'group', badge: 'Trending',
     itinerary: [{ day: 'Day 1', title: 'Arrival', desc: 'Arrive.' }],
@@ -95,12 +95,13 @@ const allPackages = [
     inclusions: ['5-star houseboat & hotel stays', 'All meals (breakfast & dinner)', 'Private AC vehicle', 'Experienced local guide', 'Airport transfers', 'Shikara ride', 'Gondola tickets'],
     exclusions: ['Flights', 'Personal expenses', 'Travel insurance', 'Pony rides', 'Tips & gratuities']
   },
-    {
+  {
     id: 4, title: 'Kerala Backwaters Bliss', dest: 'Others', image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600&q=80', duration: '6N/7D', price: '₹22,999', rating: 4.9, reviews: 312, highlights: ['Houseboat Stay', 'Munnar Tea Gardens', 'Alleppey Backwaters', 'Thekkady Wildlife'], type: 'family', badge: 'Top Rated',
     itinerary: [{ day: 'Day 1', title: 'Arrive Cochin', desc: 'Airport pickup. Fort Kochi tour - Chinese fishing nets, St. Francis Church.' }, { day: 'Day 2', title: 'Munnar', desc: 'Drive to Munnar. Tea plantations, Eravikulam National Park.' }, { day: 'Day 3', title: 'Munnar Sightseeing', desc: 'Mattupetty Dam, Echo Point, Tea Museum.' }, { day: 'Day 4', title: 'Thekkady', desc: 'Periyar Wildlife Sanctuary boat ride. Spice plantation visit.' }, { day: 'Day 5', title: 'Alleppey', desc: 'Drive to Alleppey. Board luxury houseboat. Backwater cruise.' }, { day: 'Day 6', title: 'Kovalam Beach', desc: 'Beach relaxation. Lighthouse visit. Ayurvedic massage.' }, { day: 'Day 7', title: 'Departure', desc: 'Trivandrum airport transfer.' }],
     inclusions: ['Premium hotels & houseboat', 'All meals on houseboat', 'AC vehicle', 'Boat rides', 'All entry tickets', 'Airport transfers'],
     exclusions: ['Flights', 'Ayurvedic treatments', 'Personal expenses', 'Tips']
   },
+
   {
     id: 5, title: 'Ladakh Expedition', dest: 'Others', image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=600&q=80', duration: '6N/7D', price: '₹26,999', rating: 4.8, reviews: 201, highlights: ['Pangong Lake', 'Nubra Valley', 'Khardung La Pass', 'Magnetic Hill'], type: 'adventure', badge: 'Trending',
     itinerary: [{ day: 'Day 1', title: 'Arrive Leh', desc: 'Fly into Leh. Acclimatization day. Explore Leh market.' }, { day: 'Day 2', title: 'Leh Local', desc: 'Shanti Stupa, Leh Palace, Hall of Fame, Magnetic Hill.' }, { day: 'Day 3', title: 'Nubra Valley', desc: 'Drive via Khardung La (18,380 ft). Diskit Monastery. Camel ride on sand dunes.' }, { day: 'Day 4', title: 'Pangong Lake', desc: 'Drive to Pangong Tso. Camp lakeside. Stunning blue waters.' }, { day: 'Day 5', title: 'Return to Leh', desc: 'Morning at Pangong. Drive back via Chang La pass.' }, { day: 'Day 6', title: 'Monasteries', desc: 'Hemis, Thiksey & Shey monasteries. Rancho School.' }, { day: 'Day 7', title: 'Departure', desc: 'Early morning flight from Leh.' }],
@@ -108,17 +109,17 @@ const allPackages = [
     exclusions: ['Flights', 'Personal expenses', 'AMS medicine', 'Tips', 'Travel insurance']
   },
   {
-    id: 24, title: 'Vibrant Goa', dest: 'Goa', image: 'https://images.unsplash.com/photo-1596423735880-5c6a5a02e697?w=600&q=80', duration: '2N/3D', price: '₹8,999', rating: 4.6, reviews: 110, highlights: ['Old Goa churches', 'Tour of Forts', 'Relax North Goa beaches', 'Day for Shopping'], type: 'family', badge: 'Best Price',
+    id: 24, title: 'Vibrant Goa', dest: 'Goa', image: 'https://images.unsplash.com/photo-1614082242765-7c98ca0f3df3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z29hfGVufDB8fDB8fHww', duration: '2N/3D', price: '₹8,999', rating: 4.6, reviews: 110, highlights: ['Old Goa churches', 'Tour of Forts', 'Relax North Goa beaches', 'Day for Shopping'], type: 'family', badge: 'Best Price',
     itinerary: [{ day: 'Day 1', title: 'Arrival', desc: 'Arrive in Goa.' }],
     inclusions: ['Hotels', 'Breakfast', 'Transport'], exclusions: ['Flights']
   },
   {
-    id: 25, title: 'Best of Goa', dest: 'Goa', image: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=600&q=80', duration: '3N/4D', price: '₹12,999', rating: 4.8, reviews: 250, highlights: ['Enjoy in watersports', 'Forts Sightseeing', 'Explore popular beaches', 'Cruise on Mandovi River'], type: 'group', badge: 'Best Price',
+    id: 25, title: 'Best of Goa', dest: 'Goa', image: 'https://media.istockphoto.com/id/2150163402/photo/the-candolim-beach-at-dusk-in-north-goa-india.webp?a=1&b=1&s=612x612&w=0&k=20&c=qwiUa9IbMb4DfS__oVfvR76YSIEg1rTwYpgIPBmBnFE=', duration: '3N/4D', price: '₹12,999', rating: 4.8, reviews: 250, highlights: ['Enjoy in watersports', 'Forts Sightseeing', 'Explore popular beaches', 'Cruise on Mandovi River'], type: 'group', badge: 'Best Price',
     itinerary: [{ day: 'Day 1', title: 'Arrival', desc: 'Arrive in Goa.' }],
     inclusions: ['Hotels', 'Breakfast', 'Transport', 'Cruise'], exclusions: ['Flights']
   },
   {
-    id: 26, title: 'Mumbai Goa Tour', dest: 'Goa', image: 'https://images.unsplash.com/photo-1623345805780-8f01f714e65f?w=600&q=80', duration: '5N/6D', price: '₹18,999', rating: 4.7, reviews: 140, highlights: ['Mumbai sightseeing tour', 'Goa sightseeing', 'Goa\'s Portuguese', 'Goa Shopping'], type: 'family', badge: 'Best Price',
+    id: 26, title: 'Goa Tour', dest: 'Goa', image: 'https://images.unsplash.com/photo-1623345805780-8f01f714e65f?w=600&q=80', duration: '5N/6D', price: '₹18,999', rating: 4.7, reviews: 140, highlights: ['Mumbai sightseeing tour', 'Goa sightseeing', 'Goa\'s Portuguese', 'Goa Shopping'], type: 'family', badge: 'Best Price',
     itinerary: [{ day: 'Day 1', title: 'Arrival', desc: 'Arrive in Mumbai.' }],
     inclusions: ['Hotels', 'Breakfast', 'Transport'], exclusions: ['Flights']
   }
@@ -129,7 +130,7 @@ function renderPackages(filter = 'all') {
   const noRes = document.getElementById('no-results');
   const filtered = filter === 'all' ? allPackages : allPackages.filter(p => p.type === filter);
   noRes.classList.toggle('hidden', filtered.length > 0);
-  
+
   // Group by destination
   const grouped = {};
   filtered.forEach(p => {
@@ -142,17 +143,17 @@ function renderPackages(filter = 'all') {
     html += `<div class="mb-16">
       <h2 class="text-3xl font-bold text-center mb-8 text-gray-900 font-body uppercase tracking-wide">${dest === 'Himachal' ? 'Himachal -' : dest}</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">`;
-    
+
     html += grouped[dest].map((pkg, i) => {
       const durationStr = pkg.duration.replace('N', ' NIGHTS').replace('D', ' DAYS').replace('/', '/ ');
       const priceVal = pkg.price.replace('₹', '').replace(',', ',');
-      
+
       return `<div class="bg-white rounded-2xl shadow-[0_0_15px_rgba(0,0,0,0.08)] border border-gray-100 flex flex-col h-full hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="${(i % 3) * 100}">
-        <div class="p-3 pb-0">
+        <div class="p-3 pb-0 cursor-pointer" onclick="openPackageModal(${pkg.id})">
           <img src="${pkg.image}" alt="${pkg.title}" loading="lazy" class="w-full h-56 object-cover rounded-xl">
         </div>
-        <div class="p-6 flex-grow flex flex-col justify-center text-center">
-          <h3 class="text-[16px] font-bold text-gray-900 mb-4 px-2 leading-snug">${pkg.title}</h3>
+        <div class="p-6 flex-grow flex flex-col justify-center text-center cursor-pointer" onclick="openPackageModal(${pkg.id})">
+          <h3 class="text-[16px] font-bold text-gray-900 mb-4 px-2 leading-snug hover:text-[#F05A22] transition-colors">${pkg.title}</h3>
           <div class="text-[13px] text-gray-700 mb-2">
             <span class="font-bold text-black">Package Cost:</span> INR ${priceVal}/-
           </div>
@@ -165,18 +166,18 @@ function renderPackages(filter = 'all') {
             <p class="text-[11px] text-gray-500 mb-0">Staring form</p>
             <p class="text-[22px] font-bold text-[#F05A22] leading-none mt-1">${pkg.price}/-</p>
           </div>
-          <button onclick="openPackageModal(${pkg.id})" class="bg-[#F05A22] text-white px-4 py-2.5 rounded-lg hover:bg-[#d94f1c] transition-colors font-bold text-[13px] flex items-center gap-1.5 shadow-md">
-            Book A Trip <i class="fas fa-plane text-[10px]"></i>
-          </button>
+          <a href="${waLink(`Hi! I'm interested in booking the ${pkg.title} package (${pkg.duration}, ${pkg.price}/person). Please share details and availability.`)}" target="_blank" class="bg-[#F05A22] text-white px-4 py-2.5 rounded-lg hover:bg-[#d94f1c] transition-colors font-bold text-[13px] flex items-center gap-1.5 shadow-md">
+            Book A Trip <i class="fab fa-whatsapp text-sm"></i>
+          </a>
         </div>
       </div>`;
     }).join('');
-    
+
     html += `</div></div>`;
   });
 
   grid.innerHTML = html;
-  
+
   if (typeof AOS !== 'undefined') {
     // Small timeout to allow DOM to paint before recalculating offsets
     setTimeout(() => {

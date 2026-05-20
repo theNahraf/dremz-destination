@@ -208,10 +208,10 @@ function renderHotels() {
                 
                 <div class="p-4 flex flex-col items-center flex-grow">
                   <h3 class="text-xs font-bold text-center text-gray-800 mb-4 px-2" style="font-family: 'Inter', sans-serif;">${h.name}</h3>
-                  <div class="mt-auto pt-2">
-                    <button onclick="openHotelModal(${h.id})" class="text-white text-sm font-semibold px-6 py-1.5 rounded" style="background-color: #f26f28; transition: background-color 0.2s;" onmouseover="this.style.backgroundColor='#e35d15'" onmouseout="this.style.backgroundColor='#f26f28'">
-                      Book Now
-                    </button>
+                  <div class="mt-auto pt-2 w-full text-center">
+                    <a href="${waLink(`Hi! I'm interested in booking a stay at ${h.name}, ${h.location}. Please share availability and details.`)}" target="_blank" class="text-white text-sm font-semibold px-6 py-1.5 rounded inline-flex items-center gap-1.5 justify-center" style="background-color: #f26f28; transition: background-color 0.2s;" onmouseover="this.style.backgroundColor='#e35d15'" onmouseout="this.style.backgroundColor='#f26f28'">
+                      <span>Book Now</span><i class="fab fa-whatsapp text-lg"></i>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -225,78 +225,7 @@ function renderHotels() {
   grid.innerHTML = html;
 }
 
-function openHotelModal(id) {
-  const hotel = allHotels.find(h => h.id === id);
-  if(!hotel) return;
-
-  const modal = document.getElementById('hotel-modal');
-  const content = document.getElementById('modal-content-area');
-  
-  content.innerHTML = `
-    <div class="p-6 md:p-8">
-      <div class="flex justify-between items-start mb-6">
-        <div>
-          <h3 class="text-2xl font-bold font-heading text-navy-900">${hotel.name}</h3>
-          <p class="text-teal-500 font-medium">${hotel.brand} - ${hotel.location}</p>
-        </div>
-        <button onclick="closeHotelModal()" class="text-gray-400 hover:text-gray-600">
-          <i class="fas fa-times text-xl"></i>
-        </button>
-      </div>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div>
-          <img src="${hotel.image}" class="w-full rounded-2xl shadow-sm h-64 object-cover" alt="${hotel.name}">
-          <div class="mt-6">
-            <h4 class="font-bold text-gray-800 mb-3">About this Hotel</h4>
-            <p class="text-sm text-gray-600 leading-relaxed mb-4">
-              Experience the pinnacle of luxury at ${hotel.name}. Enjoy world-class amenities, stunning views, and unparalleled service in ${hotel.location}.
-            </p>
-          </div>
-        </div>
-        
-        <div class="bg-gray-50 rounded-2xl p-6">
-          <h4 class="font-bold text-navy-900 mb-4 text-lg">Quick Inquiry</h4>
-          <form class="space-y-4" onsubmit="event.preventDefault(); submitHotelInquiry('${hotel.name}');">
-            <div class="form-group"><label>Name</label><input type="text" class="form-control" required placeholder="Your name"></div>
-            <div class="form-group"><label>Email</label><input type="email" class="form-control" required placeholder="your@email.com"></div>
-            <div class="form-group"><label>Phone</label><input type="tel" class="form-control" required placeholder="+91 XXXXX XXXXX"></div>
-            <div class="form-group"><label>Check-in / Check-out</label><input type="date" class="form-control" required onclick="this.showPicker()"></div>
-            <div class="form-group"><label>Guests</label><select class="form-control"><option>2 Adults</option><option>2 Adults, 1 Child</option><option>Family</option><option>Group</option></select></div>
-            <div class="form-group"><label>Message</label><textarea class="form-control" rows="2" placeholder="Any special requests?"></textarea></div>
-            <button type="submit" class="btn-gold w-full justify-center mt-2">Send Inquiry</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  `;
-  
-  modal.classList.add('active');
-  document.body.style.overflow = 'hidden';
-}
-
-function closeHotelModal() {
-  document.getElementById('hotel-modal').classList.remove('active');
-  document.body.style.overflow = '';
-}
-
-function submitHotelInquiry(hotelName) {
-  closeHotelModal();
-  if (typeof showToast === 'function') {
-    showToast('success', 'Inquiry Sent', `We will get back to you about ${hotelName} shortly.`);
-  } else {
-    alert(`Inquiry sent for ${hotelName}!`);
-  }
-}
-
 document.addEventListener('DOMContentLoaded', () => {
   renderHotels();
-  
-  // Close modal on outside click
-  const modal = document.getElementById('hotel-modal');
-  if (modal) {
-    modal.addEventListener('click', e => {
-      if (e.target === modal) closeHotelModal();
-    });
-  }
 });
+

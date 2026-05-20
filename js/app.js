@@ -78,8 +78,8 @@ function renderNavbar() {
   const page = currentPage();
   const links = [
     { href: 'index.html?v=4', label: 'Home', id: 'home' },
-    { 
-      label: 'DOMESTIC +', 
+    {
+      label: 'DOMESTIC +',
       id: 'domestic',
       dropdown: [
         { href: 'hotels.html?v=4', label: 'HOTELS' },
@@ -249,9 +249,9 @@ function renderFooter() {
             <li><a href="destinations.html"><i class="fas fa-map-marker-alt text-xs text-amber-400 mr-2"></i>Kashmir</a></li>
             <li><a href="destinations.html"><i class="fas fa-map-marker-alt text-xs text-amber-400 mr-2"></i>Goa</a></li>
             <li><a href="destinations.html"><i class="fas fa-map-marker-alt text-xs text-amber-400 mr-2"></i>Kerala</a></li>
-            <li><a href="destinations.html"><i class="fas fa-map-marker-alt text-xs text-amber-400 mr-2"></i>Bali</a></li>
-            <li><a href="destinations.html"><i class="fas fa-map-marker-alt text-xs text-amber-400 mr-2"></i>Maldives</a></li>
-            <li><a href="destinations.html"><i class="fas fa-map-marker-alt text-xs text-amber-400 mr-2"></i>Europe</a></li>
+            <li><a href="destinations.html"><i class="fas fa-map-marker-alt text-xs text-amber-400 mr-2"></i>Rajisthan</a></li>
+            <li><a href="destinations.html"><i class="fas fa-map-marker-alt text-xs text-amber-400 mr-2"></i>Ladakh</a></li>
+            <li><a href="destinations.html"><i class="fas fa-map-marker-alt text-xs text-amber-400 mr-2"></i>Uttarkhand</a></li>
           </ul>
         </div>
 
