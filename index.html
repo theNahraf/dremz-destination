@@ -168,7 +168,7 @@
             </div>
             <div>
               <label class="text-white/50 text-xs font-semibold mb-1 block text-left">Travel Date</label>
-              <input type="date" class="search-input" id="hero-date">
+              <input type="text" placeholder="Select Date" class="search-input" id="hero-date" onfocus="this.type='date'; if(this.showPicker) this.showPicker();" onblur="if(!this.value) this.type='text'" onclick="if(this.type==='date' && this.showPicker) this.showPicker();">
             </div>
             <div>
               <label class="text-white/50 text-xs font-semibold mb-1 block text-left">Travelers</label>
@@ -371,49 +371,9 @@
     </section>
 
     <!-- ===== TESTIMONIALS ===== -->
-    <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-14" data-aos="fade-up">
-          <p class="section-subtitle">Traveler Stories</p>
-          <h2 class="section-title">What Our Travelers Say</h2>
-        </div>
-
-        <div class="swiper testimonials-swiper" data-aos="fade-up" data-aos-delay="200">
-          <div class="swiper-wrapper" id="testimonials-wrapper">
-            <!-- Testimonials injected by JS -->
-          </div>
-          <div class="swiper-pagination mt-8"></div>
-        </div>
-      </div>
-    </section>
-
+ 
     <!-- ===== PARTNER LOGOS ===== -->
-    <section class="py-12 bg-gray-50 overflow-hidden">
-      <div class="max-w-7xl mx-auto px-4">
-        <p class="text-center text-gray-400 text-sm font-semibold tracking-wider uppercase mb-8">Trusted By Leading Travel Partners</p>
-        <div class="relative overflow-hidden">
-          <div class="logo-strip flex items-center gap-16">
-            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-plane text-2xl"></i><span class="font-semibold text-lg">SkyWings Airlines</span></div>
-            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-hotel text-2xl"></i><span class="font-semibold text-lg">Grand Hotels</span></div>
-            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-ship text-2xl"></i><span class="font-semibold text-lg">OceanCruise</span></div>
-            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-shield-alt text-2xl"></i><span class="font-semibold text-lg">TravelGuard</span></div>
-            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-car text-2xl"></i><span class="font-semibold text-lg">DriveAway</span></div>
-            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-mountain text-2xl"></i><span class="font-semibold text-lg">PeakAdventures</span></div>
-            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-globe text-2xl"></i><span class="font-semibold text-lg">WorldPass</span></div>
-            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-umbrella-beach text-2xl"></i><span class="font-semibold text-lg">IslandEscape</span></div>
-            <!-- Duplicate for seamless scroll -->
-            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-plane text-2xl"></i><span class="font-semibold text-lg">SkyWings Airlines</span></div>
-            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-hotel text-2xl"></i><span class="font-semibold text-lg">Grand Hotels</span></div>
-            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-ship text-2xl"></i><span class="font-semibold text-lg">OceanCruise</span></div>
-            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-shield-alt text-2xl"></i><span class="font-semibold text-lg">TravelGuard</span></div>
-            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-car text-2xl"></i><span class="font-semibold text-lg">DriveAway</span></div>
-            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-mountain text-2xl"></i><span class="font-semibold text-lg">PeakAdventures</span></div>
-            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-globe text-2xl"></i><span class="font-semibold text-lg">WorldPass</span></div>
-            <div class="flex items-center gap-3 text-gray-300 whitespace-nowrap"><i class="fas fa-umbrella-beach text-2xl"></i><span class="font-semibold text-lg">IslandEscape</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
+ 
 
     <!-- ===== CTA BANNER ===== -->
     <section class="cta-banner py-20">
