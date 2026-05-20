@@ -209,13 +209,13 @@ function renderFooter() {
   const footer = document.createElement('footer');
   footer.className = 'footer';
   footer.innerHTML = `
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
         <!-- Brand -->
-        <div class="lg:col-span-1">
+        <div class="col-span-2 lg:col-span-1">
           <div class="mb-6">${LOGO_SVG.stacked}</div>
           <p class="text-white/60 text-sm leading-relaxed mb-6">Crafting unforgettable travel experiences since 2024. Your trusted partner for customized trips across the world.</p>
-          <div class="flex gap-3">
+          <div class="flex gap-3 justify-center lg:justify-start">
             <a href="${waLink('Hi! I\'m interested in planning a trip.')}" target="_blank" class="footer-social-icon" aria-label="WhatsApp">
               <i class="fab fa-whatsapp"></i>
             </a>
@@ -230,34 +230,34 @@ function renderFooter() {
         </div>
 
         <!-- Quick Links -->
-        <div>
-          <h4 class="text-white font-semibold text-lg mb-5 font-sans">Quick Links</h4>
+        <div class="col-span-1">
+          <h4 class="text-white font-semibold text-base lg:text-lg mb-4 lg:mb-5 font-sans">Quick Links</h4>
           <ul class="space-y-3 text-sm">
-            <li><a href="index.html"><i class="fas fa-chevron-right text-xs text-teal-400 mr-2"></i>Home</a></li>
-            <li><a href="packages.html"><i class="fas fa-chevron-right text-xs text-teal-400 mr-2"></i>Packages</a></li>
-            <li><a href="hotels.html"><i class="fas fa-chevron-right text-xs text-teal-400 mr-2"></i>Hotels</a></li>
-            <li><a href="about.html"><i class="fas fa-chevron-right text-xs text-teal-400 mr-2"></i>About Us</a></li>
-            <li><a href="blog.html"><i class="fas fa-chevron-right text-xs text-teal-400 mr-2"></i>Blog</a></li>
-            <li><a href="contact.html"><i class="fas fa-chevron-right text-xs text-teal-400 mr-2"></i>Contact</a></li>
+            <li><a href="index.html"><i class="fas fa-chevron-right text-[10px] text-teal-400 mr-2"></i>Home</a></li>
+            <li><a href="packages.html"><i class="fas fa-chevron-right text-[10px] text-teal-400 mr-2"></i>Packages</a></li>
+            <li><a href="hotels.html"><i class="fas fa-chevron-right text-[10px] text-teal-400 mr-2"></i>Hotels</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right text-[10px] text-teal-400 mr-2"></i>About</a></li>
+            <li><a href="blog.html"><i class="fas fa-chevron-right text-[10px] text-teal-400 mr-2"></i>Blog</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right text-[10px] text-teal-400 mr-2"></i>Contact</a></li>
           </ul>
         </div>
 
         <!-- Top Destinations -->
-        <div>
-          <h4 class="text-white font-semibold text-lg mb-5 font-sans">Top Destinations</h4>
+        <div class="col-span-1">
+          <h4 class="text-white font-semibold text-base lg:text-lg mb-4 lg:mb-5 font-sans">Destinations</h4>
           <ul class="space-y-3 text-sm">
-            <li><a href="destinations.html"><i class="fas fa-map-marker-alt text-xs text-amber-400 mr-2"></i>Kashmir</a></li>
-            <li><a href="destinations.html"><i class="fas fa-map-marker-alt text-xs text-amber-400 mr-2"></i>Goa</a></li>
-            <li><a href="destinations.html"><i class="fas fa-map-marker-alt text-xs text-amber-400 mr-2"></i>Kerala</a></li>
-            <li><a href="destinations.html"><i class="fas fa-map-marker-alt text-xs text-amber-400 mr-2"></i>Rajisthan</a></li>
-            <li><a href="destinations.html"><i class="fas fa-map-marker-alt text-xs text-amber-400 mr-2"></i>Ladakh</a></li>
-            <li><a href="destinations.html"><i class="fas fa-map-marker-alt text-xs text-amber-400 mr-2"></i>Uttarkhand</a></li>
+            <li><a href="packages.html?v=4#kashmir"><i class="fas fa-map-marker-alt text-[10px] text-amber-400 mr-2"></i>Kashmir</a></li>
+            <li><a href="packages.html?v=4#goa"><i class="fas fa-map-marker-alt text-[10px] text-amber-400 mr-2"></i>Goa</a></li>
+            <li><a href="packages.html?v=4#kerala"><i class="fas fa-map-marker-alt text-[10px] text-amber-400 mr-2"></i>Kerala</a></li>
+            <li><a href="packages.html?v=4#rajasthan"><i class="fas fa-map-marker-alt text-[10px] text-amber-400 mr-2"></i>Rajasthan</a></li>
+            <li><a href="packages.html?v=4#ladakh"><i class="fas fa-map-marker-alt text-[10px] text-amber-400 mr-2"></i>Ladakh</a></li>
+            <li><a href="packages.html?v=4#uttarakhand"><i class="fas fa-map-marker-alt text-[10px] text-amber-400 mr-2"></i>Uttarakhand</a></li>
           </ul>
         </div>
 
         <!-- Contact -->
-        <div>
-          <h4 class="text-white font-semibold text-lg mb-5 font-sans">Contact Us</h4>
+        <div class="col-span-2 lg:col-span-1 mt-4 lg:mt-0">
+          <h4 class="text-white font-semibold text-lg mb-5 font-sans text-center lg:text-left">Contact Us</h4>
           <div class="space-y-3 text-sm">
             <a href="tel:${PHONE_DISPLAY.replace(/\s/g, '')}" class="flex items-center gap-3 hover:text-white">
               <i class="fas fa-phone-alt text-teal-400"></i>${PHONE_DISPLAY}
