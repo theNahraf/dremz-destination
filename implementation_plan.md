@@ -217,7 +217,7 @@ The `[DESTINATION]` part is dynamically filled based on the package/destination 
 ## Open Questions
 
 > [!NOTE]
-> **Email Address**: What email should be displayed on the contact page? I'll use `info@dremzdestination.com` as placeholder.
+> **Email Address**: What email should be displayed on the contact page? I'll use `vimalku8178@gmail.com` as placeholder.
 
 > [!NOTE]
 > **Google Maps Location**: What location should the Google Maps embed show? I'll use a generic New Delhi location as placeholder.

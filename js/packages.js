@@ -1,10 +1,10 @@
 /* ========== PACKAGES PAGE ========== */
 const allPackages = [
   {
-    id: 1, title: 'Magical Kashmir', dest: 'Kashmir', image: 'https://media.gettyimages.com/id/173294490/photo/tourists-enjoying-in-snow-covered-landscape-jammu-and-kashmir-india.jpg?s=612x612&w=0&k=20&c=vrkqUKSMMwSfsyrMzfYjNZwYIO_GQyG-3oBXYode3vE=', duration: '5N/6D', price: '₹18,999', rating: 4.9, reviews: 234, highlights: ['Dal Lake Shikara', 'Gulmarg Gondola', 'Pahalgam Valley', 'Saffron Fields'], type: 'family', badge: 'Bestseller',
-    itinerary: [{ day: 'Day 1', title: 'Arrival in Srinagar', desc: 'Airport pickup, check-in to luxury houseboat on Dal Lake. Evening shikara ride.' }, { day: 'Day 2', title: 'Gulmarg Excursion', desc: 'Drive to Gulmarg. Gondola ride to Phase 1 & 2. Snow activities.' }, { day: 'Day 3', title: 'Pahalgam Day Trip', desc: 'Visit Betaab Valley, Aru Valley, and Chandanwari. Pony ride available.' }, { day: 'Day 4', title: 'Sonmarg Adventure', desc: 'Drive to Sonmarg. Visit Thajiwas Glacier. Scenic mountain views.' }, { day: 'Day 5', title: 'Srinagar Local', desc: 'Mughal Gardens - Nishat, Shalimar, Chashme Shahi. Shopping at local markets.' }, { day: 'Day 6', title: 'Departure', desc: 'Breakfast. Airport transfer. Tour ends with beautiful memories.' }],
-    inclusions: ['5-star houseboat & hotel stays', 'All meals (breakfast & dinner)', 'Private AC vehicle', 'Experienced local guide', 'Airport transfers', 'Shikara ride', 'Gondola tickets'],
-    exclusions: ['Flights', 'Personal expenses', 'Travel insurance', 'Pony rides', 'Tips & gratuities']
+    id: 1, title: 'Royal Rajasthan', dest: 'Rajasthan', image: 'https://plus.unsplash.com/premium_photo-1661962428918-6a57ab674e23?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFqYXN0aGFufGVufDB8fDB8fHww', duration: '7N/8D', price: '₹24,999', rating: 4.8, reviews: 278, highlights: ['Jaipur Forts', 'Udaipur Lakes', 'Jaisalmer Desert Safari', 'Jodhpur Blue City'], type: 'group', badge: 'Bestseller',
+    itinerary: [{ day: 'Day 1', title: 'Arrive Jaipur', desc: 'Pink City welcome. Check in to heritage hotel.' }, { day: 'Day 2', title: 'Jaipur Sightseeing', desc: 'Amber Fort, Hawa Mahal, City Palace, Jantar Mantar.' }, { day: 'Day 3', title: 'Jodhpur', desc: 'Drive to Blue City. Mehrangarh Fort, Jaswant Thada.' }, { day: 'Day 4', title: 'Jaisalmer', desc: 'Golden Fort, Patwon Ki Haveli, Gadisar Lake.' }, { day: 'Day 5', title: 'Desert Experience', desc: 'Sam Sand Dunes camel safari. Desert camp under stars.' }, { day: 'Day 6', title: 'Udaipur', desc: 'Drive to City of Lakes. Lake Pichola boat ride.' }, { day: 'Day 7', title: 'Udaipur Explore', desc: 'City Palace, Saheliyon ki Bari, Jagdish Temple.' }, { day: 'Day 8', title: 'Departure', desc: 'Airport transfer from Udaipur.' }],
+    inclusions: ['Heritage hotel stays', 'Desert camp night', 'All breakfasts', 'AC vehicle', 'Camel safari', 'Boat rides', 'All entry tickets'],
+    exclusions: ['Flights', 'Lunch & dinner', 'Personal expenses', 'Tips', 'Camera fees']
   },
   {
     id: 2, title: 'Romantic Goa Getaway', dest: 'Goa', image: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=600&q=80', duration: '4N/5D', price: '₹12,499', rating: 4.8, reviews: 189, highlights: ['Beach Hopping', 'Water Sports', 'Nightlife Tour', 'Old Goa Heritage'], type: 'honeymoon', badge: 'Limited Slots',
@@ -12,47 +12,115 @@ const allPackages = [
     inclusions: ['4-star resort stay', 'Daily breakfast', 'AC vehicle', 'Sightseeing', 'Airport transfers'],
     exclusions: ['Flights', 'Water sports fees', 'Meals other than breakfast', 'Personal expenses']
   },
+  
   {
-    id: 3, title: 'Kerala Backwaters Bliss', dest: 'Kerala', image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600&q=80', duration: '6N/7D', price: '₹22,999', rating: 4.9, reviews: 312, highlights: ['Houseboat Stay', 'Munnar Tea Gardens', 'Alleppey Backwaters', 'Thekkady Wildlife'], type: 'family', badge: 'Top Rated',
+    id: 6, title: 'Discover Our Ravishing Rajasthan Vacation', dest: 'Rajasthan', image: 'https://images.unsplash.com/photo-1477587458883-47145ed94245?w=600&q=80', duration: '3N/4D', price: '₹9,999', rating: 4.7, reviews: 120, highlights: ['Jaipur Forts', 'City Tour'], type: 'family', badge: 'Trending',
+    itinerary: [{ day: 'Day 1', title: 'Arrival', desc: 'Arrive in Jaipur.' }, { day: 'Day 2', title: 'Jaipur', desc: 'City tour.' }, { day: 'Day 3', title: 'Departure', desc: 'Leave for onward journey.' }],
+    inclusions: ['Hotels', 'Breakfast', 'Transport'], exclusions: ['Flights']
+  },
+  {
+    id: 8, title: 'Fort Special Rajasthan Holiday', dest: 'Rajasthan', image: 'https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmFqYXN0aGFuJTIwZm9ydHxlbnwwfHwwfHx8MA%3D%3D', duration: '4N/5D', price: '₹23,000', rating: 4.7, reviews: 150, highlights: ['Heritage Forts', 'Palaces'], type: 'family', badge: 'Bestseller',
+    itinerary: [{ day: 'Day 1', title: 'Arrival', desc: 'Arrive.' }],
+    inclusions: ['Hotels', 'Breakfast', 'Transport'], exclusions: ['Flights']
+  },
+  {
+    id: 10, title: 'Best-Selling Jaisalmer Jodhpur Rajasthan', dest: 'Rajasthan', image: 'https://media.istockphoto.com/id/942152278/photo/gadisar-lake-at-jaisalmer-rajasthan-at-sunrise-with-ancient-temples-and-archaeological-ruins.jpg?s=612x612&w=0&k=20&c=HvhbHZ8HH_lAjAAI2pmqL4mUipyyAwy31qp5jjKQTO0=', duration: '3N/4D', price: '₹7,999', rating: 4.5, reviews: 80, highlights: ['Desert Safari', 'Mehrangarh Fort'], type: 'group', badge: 'Limited Slots',
+    itinerary: [{ day: 'Day 1', title: 'Arrival', desc: 'Arrive.' }],
+    inclusions: ['Hotels', 'Breakfast', 'Transport'], exclusions: ['Flights']
+  },
+ 
+  {
+    id: 12, title: 'Heaven On Earth: Uttarakhand', dest: 'Uttarakhand', image: 'https://images.unsplash.com/photo-1626714485864-42b43b6771e3?w=600&q=80', duration: '8N/9D', price: '₹16,000', rating: 4.8, reviews: 230, highlights: ['Nainital', 'Mussoorie', 'Rishikesh'], type: 'group', badge: 'Trending',
+    itinerary: [{ day: 'Day 1', title: 'Arrival', desc: 'Arrive.' }],
+    inclusions: ['Hotels', 'Breakfast', 'Transport'], exclusions: ['Flights']
+  },
+  {
+    id: 13, title: 'Delightful Uttarakhand Family Tour', dest: 'Uttarakhand', image: 'https://images.unsplash.com/photo-1610715936287-6c2ad208cdbf?w=600&q=80', duration: '10N/11D', price: '₹40,950', rating: 4.9, reviews: 150, highlights: ['Jim Corbett', 'Nainital', 'Kausani'], type: 'family', badge: 'Premium',
+    itinerary: [{ day: 'Day 1', title: 'Arrival', desc: 'Arrive.' }],
+    inclusions: ['Hotels', 'Breakfast', 'Transport', 'Safari'], exclusions: ['Flights']
+  },
+  {
+    id: 14, title: 'Blissful Nainital Ranikhet Tour', dest: 'Uttarakhand', image: 'https://images.unsplash.com/photo-1586000287868-b7ce539b9961?w=600&q=80', duration: '2N/3D', price: '₹8,925', rating: 4.5, reviews: 90, highlights: ['Naini Lake', 'Ranikhet Orchards'], type: 'family', badge: 'Bestseller',
+    itinerary: [{ day: 'Day 1', title: 'Arrival', desc: 'Arrive.' }],
+    inclusions: ['Hotels', 'Breakfast', 'Transport'], exclusions: ['Flights']
+  },
+  {
+    id: 15, title: 'Most Affordable Uttarakhand Tour', dest: 'Uttarakhand', image: 'https://images.unsplash.com/photo-1596760086208-8e65e6a95f87?w=600&q=80', duration: '1N/2D', price: '₹2,800', rating: 4.2, reviews: 45, highlights: ['Rishikesh', 'Ganga Aarti'], type: 'group', badge: 'Limited Slots',
+    itinerary: [{ day: 'Day 1', title: 'Arrival', desc: 'Arrive.' }],
+    inclusions: ['Hotels', 'Breakfast'], exclusions: ['Flights', 'Transport']
+  },
+  {
+    id: 16, title: 'Best-Selling Rishikesh Tours', dest: 'Uttarakhand', image: 'https://images.unsplash.com/photo-1598322692790-8ba25642cda0?w=600&q=80', duration: '1N/2D', price: '₹3,938', rating: 4.7, reviews: 180, highlights: ['River Rafting', 'Camping'], type: 'adventure', badge: 'Bestseller',
+    itinerary: [{ day: 'Day 1', title: 'Arrival', desc: 'Arrive.' }],
+    inclusions: ['Camps', 'Meals', 'Rafting'], exclusions: ['Flights']
+  },
+  {
+    id: 17, title: 'Uttarakhand Tour Packages For 3 Days', dest: 'Uttarakhand', image: 'https://images.unsplash.com/photo-1586000287868-b7ce539b9961?w=600&q=80', duration: '2N/3D', price: '₹12,500', rating: 4.6, reviews: 110, highlights: ['Auli Skiing', 'Joshimath'], type: 'adventure', badge: 'Trending',
+    itinerary: [{ day: 'Day 1', title: 'Arrival', desc: 'Arrive.' }],
+    inclusions: ['Hotels', 'Breakfast', 'Transport'], exclusions: ['Flights']
+  },
+  {
+    id: 18, title: 'Fascinating Uttarakhand Honeymoon', dest: 'Uttarakhand', image: 'https://images.unsplash.com/photo-1610715936287-6c2ad208cdbf?w=600&q=80', duration: '5N/6D', price: '₹20,000', rating: 4.8, reviews: 140, highlights: ['Mussoorie', 'Dhanaulti'], type: 'honeymoon', badge: 'Premium',
+    itinerary: [{ day: 'Day 1', title: 'Arrival', desc: 'Arrive.' }],
+    inclusions: ['Hotels', 'Breakfast', 'Transport', 'Candlelight Dinner'], exclusions: ['Flights']
+  },
+  {
+    id: 19, title: 'Manali-Kasol Tour Package', dest: 'Himachal', image: 'https://images.unsplash.com/photo-1623055455386-8a901844b256?w=600&q=80', duration: '3N/4D', price: '₹10,500', rating: 4.7, reviews: 250, highlights: ['Rohtang Pass', 'Solang Valley', 'Kasol Cafe'], type: 'adventure', badge: 'Trending',
+    itinerary: [{ day: 'Day 1', title: 'Arrival', desc: 'Arrive.' }],
+    inclusions: ['Hotels', 'Breakfast', 'Transport'], exclusions: ['Flights']
+  },
+  {
+    id: 20, title: 'Himachal Honeymoon By Cab', dest: 'Himachal', image: 'https://images.unsplash.com/photo-1593693411515-c20261bcad6e?w=600&q=80', duration: '7N/8D', price: '₹23,550', rating: 4.9, reviews: 190, highlights: ['Shimla', 'Kullu', 'Manali'], type: 'honeymoon', badge: 'Premium',
+    itinerary: [{ day: 'Day 1', title: 'Arrival', desc: 'Arrive.' }],
+    inclusions: ['Hotels', 'Breakfast', 'Cab', 'Honeymoon Inclusions'], exclusions: ['Flights']
+  },
+  {
+    id: 21, title: 'Best Of Himachal Honeymoon Package', dest: 'Himachal', image: 'https://images.unsplash.com/photo-1605640840469-60195f1bf85b?w=600&q=80', duration: '3N/4D', price: '₹12,500', rating: 4.6, reviews: 120, highlights: ['Dalhousie', 'Khajjiar'], type: 'honeymoon', badge: 'Bestseller',
+    itinerary: [{ day: 'Day 1', title: 'Arrival', desc: 'Arrive.' }],
+    inclusions: ['Hotels', 'Breakfast', 'Transport'], exclusions: ['Flights']
+  },
+  {
+    id: 22, title: 'Himachal Family Tour Packages', dest: 'Himachal', image: 'https://images.unsplash.com/photo-1598428584767-f311fb912dd5?w=600&q=80', duration: '9N/10D', price: '₹36,500', rating: 4.8, reviews: 210, highlights: ['Shimla', 'Manali', 'Dharamshala'], type: 'family', badge: 'Trending',
+    itinerary: [{ day: 'Day 1', title: 'Arrival', desc: 'Arrive.' }],
+    inclusions: ['Hotels', 'Breakfast', 'Dinner', 'Transport'], exclusions: ['Flights']
+  },
+  {
+    id: 23, title: 'Blissful Himachal Honeymoon Package', dest: 'Himachal', image: 'https://images.unsplash.com/photo-1623055455386-8a901844b256?w=600&q=80', duration: '9N/10D', price: '₹37,500', rating: 4.9, reviews: 130, highlights: ['Complete Himachal', 'Spiti Valley'], type: 'honeymoon', badge: 'Premium',
+    itinerary: [{ day: 'Day 1', title: 'Arrival', desc: 'Arrive.' }],
+    inclusions: ['Hotels', 'Meals', 'Transport'], exclusions: ['Flights']
+  },
+  {
+    id: 3, title: 'Magical Kashmir', dest: 'Others', image: 'https://media.gettyimages.com/id/173294490/photo/tourists-enjoying-in-snow-covered-landscape-jammu-and-kashmir-india.jpg?s=612x612&w=0&k=20&c=vrkqUKSMMwSfsyrMzfYjNZwYIO_GQyG-3oBXYode3vE=', duration: '5N/6D', price: '₹18,999', rating: 4.9, reviews: 234, highlights: ['Dal Lake Shikara', 'Gulmarg Gondola', 'Pahalgam Valley', 'Saffron Fields'], type: 'family', badge: 'Bestseller',
+    itinerary: [{ day: 'Day 1', title: 'Arrival in Srinagar', desc: 'Airport pickup, check-in to luxury houseboat on Dal Lake. Evening shikara ride.' }, { day: 'Day 2', title: 'Gulmarg Excursion', desc: 'Drive to Gulmarg. Gondola ride to Phase 1 & 2. Snow activities.' }, { day: 'Day 3', title: 'Pahalgam Day Trip', desc: 'Visit Betaab Valley, Aru Valley, and Chandanwari. Pony ride available.' }, { day: 'Day 4', title: 'Sonmarg Adventure', desc: 'Drive to Sonmarg. Visit Thajiwas Glacier. Scenic mountain views.' }, { day: 'Day 5', title: 'Srinagar Local', desc: 'Mughal Gardens - Nishat, Shalimar, Chashme Shahi. Shopping at local markets.' }, { day: 'Day 6', title: 'Departure', desc: 'Breakfast. Airport transfer. Tour ends with beautiful memories.' }],
+    inclusions: ['5-star houseboat & hotel stays', 'All meals (breakfast & dinner)', 'Private AC vehicle', 'Experienced local guide', 'Airport transfers', 'Shikara ride', 'Gondola tickets'],
+    exclusions: ['Flights', 'Personal expenses', 'Travel insurance', 'Pony rides', 'Tips & gratuities']
+  },
+    {
+    id: 4, title: 'Kerala Backwaters Bliss', dest: 'Others', image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600&q=80', duration: '6N/7D', price: '₹22,999', rating: 4.9, reviews: 312, highlights: ['Houseboat Stay', 'Munnar Tea Gardens', 'Alleppey Backwaters', 'Thekkady Wildlife'], type: 'family', badge: 'Top Rated',
     itinerary: [{ day: 'Day 1', title: 'Arrive Cochin', desc: 'Airport pickup. Fort Kochi tour - Chinese fishing nets, St. Francis Church.' }, { day: 'Day 2', title: 'Munnar', desc: 'Drive to Munnar. Tea plantations, Eravikulam National Park.' }, { day: 'Day 3', title: 'Munnar Sightseeing', desc: 'Mattupetty Dam, Echo Point, Tea Museum.' }, { day: 'Day 4', title: 'Thekkady', desc: 'Periyar Wildlife Sanctuary boat ride. Spice plantation visit.' }, { day: 'Day 5', title: 'Alleppey', desc: 'Drive to Alleppey. Board luxury houseboat. Backwater cruise.' }, { day: 'Day 6', title: 'Kovalam Beach', desc: 'Beach relaxation. Lighthouse visit. Ayurvedic massage.' }, { day: 'Day 7', title: 'Departure', desc: 'Trivandrum airport transfer.' }],
     inclusions: ['Premium hotels & houseboat', 'All meals on houseboat', 'AC vehicle', 'Boat rides', 'All entry tickets', 'Airport transfers'],
     exclusions: ['Flights', 'Ayurvedic treatments', 'Personal expenses', 'Tips']
   },
   {
-    id: 4, title: 'Bali Adventure', dest: 'Bali', image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80', duration: '5N/6D', price: '₹34,999', rating: 4.7, reviews: 156, highlights: ['Ubud Rice Terraces', 'Tanah Lot Temple', 'Snorkeling', 'Kintamani Volcano'], type: 'adventure', badge: 'Limited Slots',
-    itinerary: [{ day: 'Day 1', title: 'Arrival Bali', desc: 'Airport pickup. Seminyak beach sunset. Welcome dinner.' }, { day: 'Day 2', title: 'Ubud Cultural Tour', desc: 'Monkey Forest, Tegallalang Rice Terraces, Ubud Art Market.' }, { day: 'Day 3', title: 'Kintamani & Temples', desc: 'Mount Batur viewpoint, Tirta Empul Temple, coffee plantation.' }, { day: 'Day 4', title: 'Water Adventures', desc: 'Nusa Penida day trip - snorkeling, Kelingking Beach, Crystal Bay.' }, { day: 'Day 5', title: 'Beach & Temples', desc: 'Tanah Lot sunset. Uluwatu Temple. Kecak fire dance show.' }, { day: 'Day 6', title: 'Departure', desc: 'Last-minute shopping. Airport transfer.' }],
-    inclusions: ['4-star villa stays', 'Daily breakfast', 'Private driver', 'All entry tickets', 'Nusa Penida tour', 'Airport transfers'],
-    exclusions: ['Flights', 'Visa on arrival', 'Lunch & dinner', 'Water sports', 'Travel insurance']
-  },
-  {
-    id: 5, title: 'Royal Rajasthan', dest: 'Rajasthan', image: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=600&q=80', duration: '7N/8D', price: '₹24,999', rating: 4.8, reviews: 278, highlights: ['Jaipur Forts', 'Udaipur Lakes', 'Jaisalmer Desert Safari', 'Jodhpur Blue City'], type: 'group', badge: 'Bestseller',
-    itinerary: [{ day: 'Day 1', title: 'Arrive Jaipur', desc: 'Pink City welcome. Check in to heritage hotel.' }, { day: 'Day 2', title: 'Jaipur Sightseeing', desc: 'Amber Fort, Hawa Mahal, City Palace, Jantar Mantar.' }, { day: 'Day 3', title: 'Jodhpur', desc: 'Drive to Blue City. Mehrangarh Fort, Jaswant Thada.' }, { day: 'Day 4', title: 'Jaisalmer', desc: 'Golden Fort, Patwon Ki Haveli, Gadisar Lake.' }, { day: 'Day 5', title: 'Desert Experience', desc: 'Sam Sand Dunes camel safari. Desert camp under stars.' }, { day: 'Day 6', title: 'Udaipur', desc: 'Drive to City of Lakes. Lake Pichola boat ride.' }, { day: 'Day 7', title: 'Udaipur Explore', desc: 'City Palace, Saheliyon ki Bari, Jagdish Temple.' }, { day: 'Day 8', title: 'Departure', desc: 'Airport transfer from Udaipur.' }],
-    inclusions: ['Heritage hotel stays', 'Desert camp night', 'All breakfasts', 'AC vehicle', 'Camel safari', 'Boat rides', 'All entry tickets'],
-    exclusions: ['Flights', 'Lunch & dinner', 'Personal expenses', 'Tips', 'Camera fees']
-  },
-  {
-    id: 6, title: 'Maldives Luxury Escape', dest: 'Maldives', image: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600&q=80', duration: '4N/5D', price: '₹54,999', rating: 5.0, reviews: 98, highlights: ['Overwater Villa', 'Coral Diving', 'Sunset Cruise', 'Private Beach Dinner'], type: 'luxury', badge: 'Premium',
-    itinerary: [{ day: 'Day 1', title: 'Arrival in Paradise', desc: 'Speedboat transfer to resort. Check into overwater villa. Welcome cocktail.' }, { day: 'Day 2', title: 'Ocean Adventures', desc: 'Snorkeling at coral reef. Dolphin watching cruise. Spa session.' }, { day: 'Day 3', title: 'Island Hopping', desc: 'Visit local island. Water sports - jet ski, parasailing. Underwater restaurant dinner.' }, { day: 'Day 4', title: 'Romance & Relaxation', desc: 'Private beach breakfast. Couples spa. Sunset sailing. Beach bonfire dinner.' }, { day: 'Day 5', title: 'Departure', desc: 'Sunrise yoga. Farewell brunch. Speedboat & flight.' }],
-    inclusions: ['Overwater villa', 'All meals (full board)', 'Speedboat transfers', 'Snorkeling gear', 'Sunset cruise', 'Couples spa', 'Water sports'],
-    exclusions: ['Flights', 'Scuba diving certification', 'Premium alcohol', 'Tips', 'Travel insurance']
-  },
-  {
-    id: 7, title: 'Ladakh Expedition', dest: 'Ladakh', image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=600&q=80', duration: '6N/7D', price: '₹26,999', rating: 4.8, reviews: 201, highlights: ['Pangong Lake', 'Nubra Valley', 'Khardung La Pass', 'Magnetic Hill'], type: 'adventure', badge: 'Trending',
+    id: 5, title: 'Ladakh Expedition', dest: 'Others', image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=600&q=80', duration: '6N/7D', price: '₹26,999', rating: 4.8, reviews: 201, highlights: ['Pangong Lake', 'Nubra Valley', 'Khardung La Pass', 'Magnetic Hill'], type: 'adventure', badge: 'Trending',
     itinerary: [{ day: 'Day 1', title: 'Arrive Leh', desc: 'Fly into Leh. Acclimatization day. Explore Leh market.' }, { day: 'Day 2', title: 'Leh Local', desc: 'Shanti Stupa, Leh Palace, Hall of Fame, Magnetic Hill.' }, { day: 'Day 3', title: 'Nubra Valley', desc: 'Drive via Khardung La (18,380 ft). Diskit Monastery. Camel ride on sand dunes.' }, { day: 'Day 4', title: 'Pangong Lake', desc: 'Drive to Pangong Tso. Camp lakeside. Stunning blue waters.' }, { day: 'Day 5', title: 'Return to Leh', desc: 'Morning at Pangong. Drive back via Chang La pass.' }, { day: 'Day 6', title: 'Monasteries', desc: 'Hemis, Thiksey & Shey monasteries. Rancho School.' }, { day: 'Day 7', title: 'Departure', desc: 'Early morning flight from Leh.' }],
     inclusions: ['Hotels & camps', 'All meals', '4x4 vehicle', 'Inner Line Permits', 'Oxygen cylinder', 'All entry fees'],
     exclusions: ['Flights', 'Personal expenses', 'AMS medicine', 'Tips', 'Travel insurance']
   },
   {
-    id: 8, title: 'Thailand Explorer', dest: 'Thailand', image: 'https://images.unsplash.com/photo-1528181304800-259b08848526?w=600&q=80', duration: '5N/6D', price: '₹29,999', rating: 4.7, reviews: 167, highlights: ['Bangkok Temples', 'Pattaya Beaches', 'Phi Phi Islands', 'Floating Market'], type: 'family', badge: 'Popular',
-    itinerary: [{ day: 'Day 1', title: 'Bangkok Arrival', desc: 'Airport pickup. Khao San Road night market.' }, { day: 'Day 2', title: 'Bangkok Temples', desc: 'Grand Palace, Wat Pho, Wat Arun. Chao Phraya river cruise.' }, { day: 'Day 3', title: 'Floating Market & Pattaya', desc: 'Damnoen Saduak Floating Market. Transfer to Pattaya.' }, { day: 'Day 4', title: 'Pattaya Fun', desc: 'Coral Island day trip. Alcazar Show. Walking Street.' }, { day: 'Day 5', title: 'Pattaya Activities', desc: 'Nong Nooch Garden, Art in Paradise, Sanctuary of Truth.' }, { day: 'Day 6', title: 'Departure', desc: 'Bangkok shopping. Airport transfer.' }],
-    inclusions: ['4-star hotels', 'Daily breakfast', 'AC transfers', 'City tours', 'Coral Island trip', 'Airport transfers'],
-    exclusions: ['Flights', 'Visa', 'Lunch & dinner', 'Shows entry', 'Personal expenses']
+    id: 24, title: 'Vibrant Goa', dest: 'Goa', image: 'https://images.unsplash.com/photo-1596423735880-5c6a5a02e697?w=600&q=80', duration: '2N/3D', price: '₹8,999', rating: 4.6, reviews: 110, highlights: ['Old Goa churches', 'Tour of Forts', 'Relax North Goa beaches', 'Day for Shopping'], type: 'family', badge: 'Best Price',
+    itinerary: [{ day: 'Day 1', title: 'Arrival', desc: 'Arrive in Goa.' }],
+    inclusions: ['Hotels', 'Breakfast', 'Transport'], exclusions: ['Flights']
   },
   {
-    id: 9, title: 'Europe Grand Tour', dest: 'Europe', image: 'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80', duration: '10N/11D', price: '₹1,29,999', rating: 4.9, reviews: 89, highlights: ['Paris Eiffel Tower', 'Swiss Alps', 'Rome Colosseum', 'Amsterdam Canals'], type: 'luxury', badge: 'Premium',
-    itinerary: [{ day: 'Day 1-2', title: 'Paris', desc: 'Eiffel Tower, Louvre Museum, Seine River cruise, Montmartre.' }, { day: 'Day 3-4', title: 'Switzerland', desc: 'Lucerne, Mt. Titlis, Interlaken, Jungfraujoch.' }, { day: 'Day 5-6', title: 'Italy', desc: 'Rome - Colosseum, Vatican. Venice - Gondola ride, St. Mark\'s.' }, { day: 'Day 7-8', title: 'Austria & Germany', desc: 'Innsbruck, Neuschwanstein Castle, Munich.' }, { day: 'Day 9-10', title: 'Amsterdam & Brussels', desc: 'Canal cruise, Anne Frank House, Belgian chocolate tour.' }, { day: 'Day 11', title: 'Departure', desc: 'Amsterdam airport transfer.' }],
-    inclusions: ['4-star hotels', 'Daily breakfast', 'Luxury coach', 'English guide', 'All entry tickets', 'City tours'],
-    exclusions: ['Flights', 'Visa fees', 'Lunch & dinner', 'Travel insurance', 'Tips', 'Shopping']
+    id: 25, title: 'Best of Goa', dest: 'Goa', image: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=600&q=80', duration: '3N/4D', price: '₹12,999', rating: 4.8, reviews: 250, highlights: ['Enjoy in watersports', 'Forts Sightseeing', 'Explore popular beaches', 'Cruise on Mandovi River'], type: 'group', badge: 'Best Price',
+    itinerary: [{ day: 'Day 1', title: 'Arrival', desc: 'Arrive in Goa.' }],
+    inclusions: ['Hotels', 'Breakfast', 'Transport', 'Cruise'], exclusions: ['Flights']
+  },
+  {
+    id: 26, title: 'Mumbai Goa Tour', dest: 'Goa', image: 'https://images.unsplash.com/photo-1623345805780-8f01f714e65f?w=600&q=80', duration: '5N/6D', price: '₹18,999', rating: 4.7, reviews: 140, highlights: ['Mumbai sightseeing tour', 'Goa sightseeing', 'Goa\'s Portuguese', 'Goa Shopping'], type: 'family', badge: 'Best Price',
+    itinerary: [{ day: 'Day 1', title: 'Arrival', desc: 'Arrive in Mumbai.' }],
+    inclusions: ['Hotels', 'Breakfast', 'Transport'], exclusions: ['Flights']
   }
 ];
 
@@ -61,33 +129,77 @@ function renderPackages(filter = 'all') {
   const noRes = document.getElementById('no-results');
   const filtered = filter === 'all' ? allPackages : allPackages.filter(p => p.type === filter);
   noRes.classList.toggle('hidden', filtered.length > 0);
-  grid.innerHTML = filtered.map((pkg, i) => {
-    const stars = '★'.repeat(Math.floor(pkg.rating));
-    const waMsg = `Hi! I'm interested in the ${pkg.title} package (${pkg.duration}, ${pkg.price}/person). Please share details.`;
-    const bc = pkg.badge === 'Limited Slots' ? 'from-red-500 to-red-600' : pkg.badge === 'Premium' ? 'from-amber-500 to-amber-600' : pkg.badge === 'Trending' ? 'from-purple-500 to-purple-600' : 'from-teal-500 to-teal-600';
-    return `<div class="card" data-aos="fade-up" data-aos-delay="${(i % 3) * 100}">
-      <div class="card-image"><img src="${pkg.image}" alt="${pkg.title}" loading="lazy">
-        <div class="card-badge bg-gradient-to-r ${bc}">${pkg.badge}</div>
-        <div class="card-price">${pkg.price}<span class="text-xs text-white/60 font-normal">/person</span></div>
-      </div>
-      <div class="p-5">
-        <div class="flex items-center justify-between mb-2">
-          <span class="text-xs font-semibold text-teal-600 tracking-wider uppercase">${pkg.dest}</span>
-          <span class="stars">${stars}</span>
+  
+  // Group by destination
+  const grouped = {};
+  filtered.forEach(p => {
+    if (!grouped[p.dest]) grouped[p.dest] = [];
+    grouped[p.dest].push(p);
+  });
+
+  let html = '';
+  Object.keys(grouped).forEach((dest) => {
+    html += `<div class="mb-16">
+      <h2 class="text-3xl font-bold text-center mb-8 text-gray-900 font-body uppercase tracking-wide">${dest === 'Himachal' ? 'Himachal -' : dest}</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">`;
+    
+    html += grouped[dest].map((pkg, i) => {
+      const durationStr = pkg.duration.replace('N', ' NIGHTS').replace('D', ' DAYS').replace('/', '/ ');
+      const priceVal = pkg.price.replace('₹', '').replace(',', ',');
+      
+      return `<div class="bg-white rounded-2xl shadow-[0_0_15px_rgba(0,0,0,0.08)] border border-gray-100 flex flex-col h-full hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="${(i % 3) * 100}">
+        <div class="p-3 pb-0">
+          <img src="${pkg.image}" alt="${pkg.title}" loading="lazy" class="w-full h-56 object-cover rounded-xl">
         </div>
-        <h3 class="font-heading text-xl font-bold text-gray-900 mb-2">${pkg.title}</h3>
-        <div class="flex items-center gap-4 text-sm text-gray-500 mb-3">
-          <span><i class="far fa-clock mr-1"></i>${pkg.duration}</span>
-          <span><i class="far fa-star mr-1"></i>${pkg.rating} (${pkg.reviews})</span>
+        <div class="p-6 flex-grow flex flex-col justify-center text-center">
+          <h3 class="text-[16px] font-bold text-gray-900 mb-4 px-2 leading-snug">${pkg.title}</h3>
+          <div class="text-[13px] text-gray-700 mb-2">
+            <span class="font-bold text-black">Package Cost:</span> INR ${priceVal}/-
+          </div>
+          <div class="text-[13px] text-gray-700">
+            <span class="font-bold text-black">Duration:</span> ${durationStr}
+          </div>
         </div>
-        <ul class="mb-4 space-y-1">${pkg.highlights.map(h => `<li class="text-sm text-gray-500 flex items-center gap-2"><i class="fas fa-check text-teal-500 text-xs"></i>${h}</li>`).join('')}</ul>
-        <div class="flex gap-2">
-          <a href="${waLink(waMsg)}" target="_blank" class="btn-gold flex-1 justify-center text-sm !py-2.5"><span>Book Now</span><i class="fab fa-whatsapp"></i></a>
-          <button onclick="openPackageModal(${pkg.id})" class="btn-outline !text-gray-700 !border-gray-200 hover:!border-teal-500 hover:!text-teal-600 text-sm !py-2.5 px-4">Details</button>
+        <div class="bg-[#FFF5F0] p-4 px-5 flex justify-between items-center rounded-b-2xl border-t border-orange-50 mt-auto">
+          <div class="text-left">
+            <p class="text-[11px] text-gray-500 mb-0">Staring form</p>
+            <p class="text-[22px] font-bold text-[#F05A22] leading-none mt-1">${pkg.price}/-</p>
+          </div>
+          <button onclick="openPackageModal(${pkg.id})" class="bg-[#F05A22] text-white px-4 py-2.5 rounded-lg hover:bg-[#d94f1c] transition-colors font-bold text-[13px] flex items-center gap-1.5 shadow-md">
+            Book A Trip <i class="fas fa-plane text-[10px]"></i>
+          </button>
         </div>
-      </div></div>`;
-  }).join('');
-  if (typeof AOS !== 'undefined') AOS.refresh();
+      </div>`;
+    }).join('');
+    
+    html += `</div></div>`;
+  });
+
+  grid.innerHTML = html;
+  
+  if (typeof AOS !== 'undefined') {
+    // Small timeout to allow DOM to paint before recalculating offsets
+    setTimeout(() => {
+      AOS.refresh();
+    }, 150);
+
+    // Refresh again after all images have loaded to fix any layout shifts
+    const images = grid.querySelectorAll('img');
+    let loaded = 0;
+    if (images.length > 0) {
+      images.forEach(img => {
+        if (img.complete) {
+          loaded++;
+          if (loaded === images.length) setTimeout(() => AOS.refresh(), 100);
+        } else {
+          img.addEventListener('load', () => {
+            loaded++;
+            if (loaded === images.length) setTimeout(() => AOS.refresh(), 100);
+          });
+        }
+      });
+    }
+  }
 }
 
 function openPackageModal(id) {
@@ -131,7 +243,7 @@ function openPackageModal(id) {
             <div class="form-group"><label>Name</label><input type="text" class="form-control" required placeholder="Your name"></div>
             <div class="form-group"><label>Email</label><input type="email" class="form-control" required placeholder="your@email.com"></div>
             <div class="form-group"><label>Phone</label><input type="tel" class="form-control" required placeholder="+91 XXXXX XXXXX"></div>
-            <div class="form-group"><label>Travel Dates</label><input type="date" class="form-control" required></div>
+            <div class="form-group"><label>Travel Dates</label><input type="date" class="form-control" required onclick="this.showPicker()"></div>
             <div class="form-group"><label>Travelers</label><select class="form-control"><option>2 People</option><option>3-5</option><option>6-10</option><option>10+</option></select></div>
             <div class="form-group"><label>Message</label><textarea class="form-control" rows="2" placeholder="Any special requests?"></textarea></div>
           </div>
