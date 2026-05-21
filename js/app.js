@@ -246,10 +246,10 @@ function renderFooter() {
         <div class="col-span-1">
           <h4 class="text-white font-semibold text-base lg:text-lg mb-4 lg:mb-5 font-sans">Destinations</h4>
           <ul class="space-y-3 text-sm">
+          <li><a href="packages.html?v=4#rajasthan"><i class="fas fa-map-marker-alt text-[10px] text-amber-400 mr-2"></i>Rajasthan</a></li>
+          <li><a href="packages.html?v=4#goa"><i class="fas fa-map-marker-alt text-[10px] text-amber-400 mr-2"></i>Goa</a></li>
             <li><a href="packages.html?v=4#kashmir"><i class="fas fa-map-marker-alt text-[10px] text-amber-400 mr-2"></i>Kashmir</a></li>
-            <li><a href="packages.html?v=4#goa"><i class="fas fa-map-marker-alt text-[10px] text-amber-400 mr-2"></i>Goa</a></li>
             <li><a href="packages.html?v=4#kerala"><i class="fas fa-map-marker-alt text-[10px] text-amber-400 mr-2"></i>Kerala</a></li>
-            <li><a href="packages.html?v=4#rajasthan"><i class="fas fa-map-marker-alt text-[10px] text-amber-400 mr-2"></i>Rajasthan</a></li>
             <li><a href="packages.html?v=4#ladakh"><i class="fas fa-map-marker-alt text-[10px] text-amber-400 mr-2"></i>Ladakh</a></li>
             <li><a href="packages.html?v=4#uttarakhand"><i class="fas fa-map-marker-alt text-[10px] text-amber-400 mr-2"></i>Uttarakhand</a></li>
           </ul>
