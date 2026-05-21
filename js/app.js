@@ -101,7 +101,7 @@ function renderNavbar() {
             ${l.label}
           </button>
           <div class="dropdown-menu absolute top-full left-0 mt-2 w-48 bg-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-gray-100 flex flex-col z-50">
-            ${l.dropdown.map(d => `<a href="${d.href}" class="px-5 py-3 text-sm text-gray-800 hover:bg-gray-50 hover:text-teal-600 transition-colors border-b border-gray-200 last:border-0" style="text-transform: uppercase; letter-spacing: 0.5px;">${d.label}</a>`).join('')}
+            ${l.dropdown.map(d => `<a href="${d.href}" class="px-5 py-3 text-sm text-gray-800 hover:bg-gray-50 hover:text-teal-600 transition-colors border-b border-gray-200 last:border-0" letter-spacing: 0.5px;">${d.label}</a>`).join('')}
           </div>
         </div>
       `;
