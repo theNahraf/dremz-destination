@@ -65,7 +65,7 @@ const allPackages = [
     inclusions: ['Hotels', 'Meals', 'Sightseeing', 'Transport'], exclusions: ['Flights']
   },
   {
-    id: 102, title: 'HONEYMOON SPECIAL PACKAGE', dest: 'Goa', image: 'https://tripdaddy.in/wp-content/uploads/al_opt_content/IMAGE/tripdaddy.in/wp-content/uploads/2024/10/best-luxury-hotels-in-north-goa-YU-Hotel.jpg.bv.webp?bv_host=tripdaddy.in', duration: '3N/4D', price: '₹12,000', rating: 4.9, reviews: 210, highlights: ['Romantic Hotel Stay', 'Couples Sightseeing', 'Private Transfers', 'Candlelight Dinner'], type: 'honeymoon', badge: 'Couples',
+    id: 102, title: 'HONEYMOON SPECIAL PACKAGE', dest: 'Goa', image: 'https://media.istockphoto.com/id/2276438352/photo/boats-at-the-palolem-beach-in-goa-india.jpg?s=612x612&w=0&k=20&c=HFzixIIzqk6RR4xdVXeynT7lHVR1aeCJh7FOtad1iY0=', duration: '3N/4D', price: '₹12,000', rating: 4.9, reviews: 210, highlights: ['Romantic Hotel Stay', 'Couples Sightseeing', 'Private Transfers', 'Candlelight Dinner'], type: 'honeymoon', badge: 'Couples',
     itinerary: [{ day: 'Day 1', title: 'Arrival', desc: 'Arrive in Goa. Special Honeymoon Welcome.' }, { day: 'Day 2', title: 'Beach Day', desc: 'Relaxing day at South Goa beaches.' }, { day: 'Day 3', title: 'Sightseeing', desc: 'Private tour of Old Goa and Mandovi river cruise.' }, { day: 'Day 4', title: 'Departure', desc: 'Departure from Goa.' }],
     inclusions: ['Hotels', 'Meals', 'Sightseeing', 'Transport', 'Candlelight Dinner'], exclusions: ['Flights']
   },
@@ -75,7 +75,7 @@ const allPackages = [
     inclusions: ['Hotels', 'Meals', 'Sightseeing', 'Transport'], exclusions: ['Flights']
   },
   {
-    id: 104, title: 'BUDGET FRIENDLY GOA PACKAGE', dest: 'Goa', image: 'https://tripdaddy.in/wp-content/uploads/al_opt_content/IMAGE/tripdaddy.in/wp-content/uploads/2024/10/best-stay-in-North-Goa-YU-Hotel-Goa-scaled-1.jpg.bv.webp?bv_host=tripdaddy.in', duration: '3N/4D', price: '₹6,500', rating: 4.5, reviews: 98, highlights: ['Budget Hotel', 'Group Sightseeing', 'Pick & Drop Transfers', 'Breakfast Included'], type: 'group', badge: 'Budget',
+    id: 104, title: 'BUDGET FRIENDLY GOA PACKAGE', dest: 'Goa', image: 'https://media.istockphoto.com/id/469852152/photo/arambol-beach-goa.jpg?s=612x612&w=0&k=20&c=PK7nClOmOvKi4JxDumL5-YI8lkX53b9vHF75nvExDX4=', duration: '3N/4D', price: '₹6,500', rating: 4.5, reviews: 98, highlights: ['Budget Hotel', 'Group Sightseeing', 'Pick & Drop Transfers', 'Breakfast Included'], type: 'group', badge: 'Budget',
     itinerary: [{ day: 'Day 1', title: 'Arrival', desc: 'Arrive in Goa.' }, { day: 'Day 2', title: 'North Goa', desc: 'Beaches and Forts.' }, { day: 'Day 3', title: 'South Goa', desc: 'Churches and Temples.' }, { day: 'Day 4', title: 'Departure', desc: 'Departure from Goa.' }],
     inclusions: ['Hotels', 'Meals', 'Sightseeing', 'Transport'], exclusions: ['Flights']
   },
