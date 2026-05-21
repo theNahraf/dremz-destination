@@ -1,6 +1,6 @@
 /* ========== BLOG PAGE ========== */
 const blogPosts = [
-  { id:1, title:'10 Must-Visit Places in Kashmir for First-Timers', excerpt:'Kashmir is a paradise that needs no introduction. Here are the top 10 spots every traveler must experience on their first visit to this heavenly valley.', image:'https://images.unsplash.com/photo-1595815771614-ade9d652a65d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8a2FzaG1pcnxlbnwwfHwwfHx8MA%3D%3D', cat:'guides', date:'May 10, 2024 & 2025', readTime:'5 min',
+  { id:1, title:'10 Must-Visit Places in Kashmir for First-Timers', excerpt:'Kashmir is a paradise that needs no introduction. Here are the top 10 spots every traveler must experience on their first visit to this heavenly valley.', image:'https://images.unsplash.com/photo-1595815771614-ade9d652a65d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8a2FzaG1pcnxlbnwwfHwwfHx8MA%3D%3D', cat:'guides', date:'May 10, 2024', readTime:'5 min',
     content:`<p>Kashmir, often called "Paradise on Earth," is a destination that should be on every traveler's bucket list. From the serene Dal Lake to the snow-capped peaks of Gulmarg, here are the must-visit places:</p>
     <h3>1. Dal Lake, Srinagar</h3><p>The iconic heart of Kashmir. Take a shikara ride at sunset, stay in a traditional houseboat, and experience the floating markets. The reflection of mountains in the calm waters is truly magical.</p>
     <h3>2. Gulmarg</h3><p>Known as the "Meadow of Flowers," Gulmarg transforms into a winter wonderland with Asia's highest gondola ride. Perfect for skiing in winter and trekking in summer.</p>
@@ -9,13 +9,13 @@ const blogPosts = [
     <h3>5. Mughal Gardens</h3><p>Visit Nishat Bagh, Shalimar Bagh, and Chashme Shahi — these gardens are masterpieces of Mughal architecture and landscaping.</p>
     <p><strong>Pro tip:</strong> Visit Kashmir between March and October for the best weather. Book your trip with Dremz Destination for a hassle-free experience!</p>`
   },
-  { id:2, title:'Ultimate Packing Guide for a Beach Vacation', excerpt:'Packing for a beach trip can be tricky. Here\'s everything you need — and what to leave behind — for the perfect beach getaway.', image:'https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=600&q=80', cat:'packing', date:'May 5, 2024 & 2025', readTime:'4 min',
+  { id:2, title:'Ultimate Packing Guide for a Beach Vacation', excerpt:'Packing for a beach trip can be tricky. Here\'s everything you need — and what to leave behind — for the perfect beach getaway.', image:'https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=600&q=80', cat:'packing', date:'May 5, 2024', readTime:'4 min',
     content:`<p>Heading to Goa, Maldives, or Bali? Packing smart is the key to a stress-free beach vacation. Here's your complete checklist:</p>
     <h3>Essentials</h3><ul><li>Lightweight, breathable clothing</li><li>Swimwear (at least 2 sets)</li><li>Reef-safe sunscreen (SPF 50+)</li><li>Sunglasses with UV protection</li><li>Wide-brimmed hat</li><li>Waterproof phone case</li></ul>
     <h3>What to Skip</h3><ul><li>Heavy jeans or formal wear</li><li>Expensive jewelry</li><li>Too many shoes (flip-flops + one pair of sneakers is enough)</li><li>Full-size toiletries (hotels provide basics)</li></ul>
     <p><strong>Pro tip:</strong> Roll your clothes instead of folding — you'll fit 30% more in your suitcase!</p>`
   },
-  { id:3, title:'How to Travel India on a ₹2,000/Day Budget', excerpt:'Think luxury travel requires deep pockets? Think again. Here\'s how to explore India\'s best destinations without breaking the bank.', image:'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=600&q=80', cat:'budget', date:'Apr 28, 2024 & 2025', readTime:'6 min',
+  { id:3, title:'How to Travel India on a ₹2,000/Day Budget', excerpt:'Think luxury travel requires deep pockets? Think again. Here\'s how to explore India\'s best destinations without breaking the bank.', image:'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=600&q=80', cat:'budget', date:'Apr 28, 2024', readTime:'6 min',
     content:`<p>India is one of the most budget-friendly travel destinations in the world. Here's how to make the most of ₹2,000 per day:</p>
     <h3>Accommodation: ₹500-800</h3><p>Hostels, guesthouses, and homestays offer clean, comfortable stays at fraction of hotel prices. Apps like OYO and Hostelworld are your friends.</p>
     <h3>Food: ₹400-600</h3><p>Eat like a local! Street food and small restaurants (dhabas) serve incredible meals for ₹50-150. Try thalis for the best value.</p>
@@ -23,7 +23,7 @@ const blogPosts = [
     <h3>Activities: ₹200-400</h3><p>Many temples, beaches, and natural attractions are free. Museum entries rarely exceed ₹100.</p>
     <p><strong>Pro tip:</strong> Travel during shoulder season (Sep-Nov, Feb-Mar) for the best deals on everything!</p>`
   },
-  { id:5, title:'5 Essential Travel Safety Tips for Solo Travelers', excerpt:'Solo travel is liberating, but safety should always be a priority. Here are 5 proven tips to stay safe while exploring the world alone.', image:'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&q=80', cat:'tips', date:'Apr 15, 2024 & 2025', readTime:'4 min',
+  { id:5, title:'5 Essential Travel Safety Tips for Solo Travelers', excerpt:'Solo travel is liberating, but safety should always be a priority. Here are 5 proven tips to stay safe while exploring the world alone.', image:'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&q=80', cat:'tips', date:'Apr 15, 2024', readTime:'4 min',
     content:`<p>Solo travel is one of the most rewarding experiences. Stay safe with these essential tips:</p>
     <h3>1. Share Your Itinerary</h3><p>Always share your travel plans, hotel details, and flight info with a trusted friend or family member.</p>
     <h3>2. Keep Digital Copies</h3><p>Photograph your passport, visa, insurance, and important documents. Store them in cloud storage.</p>
@@ -31,7 +31,7 @@ const blogPosts = [
     <h3>4. Stay Connected</h3><p>Get a local SIM card immediately. Having internet access is your best safety net for maps, translations, and emergency calls.</p>
     <h3>5. Use Registered Transport</h3><p>Only use official taxis, ride-hailing apps (Uber, Grab), or pre-arranged transfers. Avoid unmarked vehicles.</p>`
   },
-  { id:6, title:'The Perfect 7-Day Kerala Itinerary', excerpt:'Kerala has it all — backwaters, beaches, hills, and wildlife. Here\'s how to see the best of God\'s Own Country in just one week.', image:'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600&q=80', cat:'guides', date:'Apr 8, 2024 & 2025', readTime:'8 min',
+  { id:6, title:'The Perfect 7-Day Kerala Itinerary', excerpt:'Kerala has it all — backwaters, beaches, hills, and wildlife. Here\'s how to see the best of God\'s Own Country in just one week.', image:'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600&q=80', cat:'guides', date:'Apr 8, 2024', readTime:'8 min',
     content:`<p>Kerala is a destination that rewards slow travel. Here's the perfect week-long itinerary:</p>
     <h3>Days 1-2: Kochi & Munnar</h3><p>Start in Fort Kochi for Chinese fishing nets and spice markets. Drive up to Munnar for tea plantations and cool mountain air.</p>
     <h3>Days 3-4: Thekkady & Periyar</h3><p>Wildlife safari at Periyar Lake, spice plantation tour, and bamboo rafting through the jungle.</p>
