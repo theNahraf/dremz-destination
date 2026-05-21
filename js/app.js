@@ -97,7 +97,7 @@ function renderNavbar() {
     if (l.dropdown) {
       return `
         <div class="nav-dropdown relative group">
-          <button class="nav-link flex items-center gap-1 ${page === l.id || page === 'packages' || page === 'hotels' ? 'active' : ''}" style="text-transform: uppercase;">
+          <button class="nav-link flex items-center gap-1 ${page === l.id || page === 'packages' || page === 'hotels' ? 'active' : ''}" >
             ${l.label}
           </button>
           <div class="dropdown-menu absolute top-full left-0 mt-2 w-48 bg-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-gray-100 flex flex-col z-50">
