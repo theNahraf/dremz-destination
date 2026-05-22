@@ -160,9 +160,13 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.9rem;
   width: 100%;
   min-width: 0;
+  max-width: 100%;
   box-sizing: border-box;
   transition: all 0.3s ease;
   color-scheme: dark;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .search-input option {
   background-color: var(--navy);
