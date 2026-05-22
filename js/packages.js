@@ -60,22 +60,22 @@ const allPackages = [
     inclusions: ['Hotels', 'Breakfast', 'Transport', 'Candlelight Dinner'], exclusions: ['Flights']
   },
    {
-    id: 101, title: 'BEST PACKAGE OF GOA', dest: 'Goa', image: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=600&q=80', duration: '3N/4D', price: '₹8,599', rating: 4.8, reviews: 189, highlights: ['Premium Hotel Stay', 'Full Sightseeing Tour', 'Airport Transfers', 'Daily Meals Included'], type: 'group', badge: 'Best Price',
+    id: 101, title: 'BEST PACKAGE OF GOA', dest: 'Goa', image: 'https://titosgoa.com/_next/image?url=%2Fapi%2Fuploads%2F1768282500728-why-tourists-visit-goa.png&w=1920&q=75', duration: '3N/4D', price: '₹8,599', rating: 4.8, reviews: 189, highlights: ['Premium Hotel Stay', 'Full Sightseeing Tour', 'Airport Transfers', 'Daily Meals Included'], type: 'group', badge: 'Best Price',
     itinerary: [{ day: 'Day 1', title: 'Arrival', desc: 'Arrive in Goa.' }, { day: 'Day 2', title: 'North Goa Tour', desc: 'Aguada Fort, Vagator, Anjuna Flea Market, Chapora Fort.' }, { day: 'Day 3', title: 'South Goa Explore', desc: 'Colva Beach, Palolem Beach, Cabo de Rama Fort.' }, { day: 'Day 4', title: 'Departure', desc: 'Departure from Goa.' }],
     inclusions: ['Hotels', 'Meals', 'Sightseeing', 'Transport'], exclusions: ['Flights']
   },
   {
-    id: 102, title: 'HONEYMOON SPECIAL PACKAGE', dest: 'Goa', image: 'https://media.istockphoto.com/id/2276438352/photo/boats-at-the-palolem-beach-in-goa-india.jpg?s=612x612&w=0&k=20&c=HFzixIIzqk6RR4xdVXeynT7lHVR1aeCJh7FOtad1iY0=', duration: '3N/4D', price: '₹12,000', rating: 4.9, reviews: 210, highlights: ['Romantic Hotel Stay', 'Couples Sightseeing', 'Private Transfers', 'Candlelight Dinner'], type: 'honeymoon', badge: 'Couples',
+    id: 102, title: 'HONEYMOON SPECIAL PACKAGE', dest: 'Goa', image: 'https://allindiapackages.com/public/uploads/1550341227goa_honeymoon_tour.jpg', duration: '3N/4D', price: '₹12,000', rating: 4.9, reviews: 210, highlights: ['Romantic Hotel Stay', 'Couples Sightseeing', 'Private Transfers', 'Candlelight Dinner'], type: 'honeymoon', badge: 'Couples',
     itinerary: [{ day: 'Day 1', title: 'Arrival', desc: 'Arrive in Goa. Special Honeymoon Welcome.' }, { day: 'Day 2', title: 'Beach Day', desc: 'Relaxing day at South Goa beaches.' }, { day: 'Day 3', title: 'Sightseeing', desc: 'Private tour of Old Goa and Mandovi river cruise.' }, { day: 'Day 4', title: 'Departure', desc: 'Departure from Goa.' }],
     inclusions: ['Hotels', 'Meals', 'Sightseeing', 'Transport', 'Candlelight Dinner'], exclusions: ['Flights']
   },
   {
-    id: 103, title: 'STANDARD PACKAGE', dest: 'Goa', image: 'https://images.unsplash.com/photo-1614082242765-7c98ca0f3df3?w=600&q=80', duration: '3N/4D', price: '₹8,000', rating: 4.6, reviews: 145, highlights: ['Comfortable Hotel', 'Guided Sightseeing', 'Shared Transfers', 'Daily Meals'], type: 'family', badge: 'Popular',
+    id: 103, title: 'STANDARD PACKAGE', dest: 'Goa', image: 'https://travteler.com/wp-content/uploads/2024/03/goaresortlead-1366x768-1.jpg', duration: '3N/4D', price: '₹8,000', rating: 4.6, reviews: 145, highlights: ['Comfortable Hotel', 'Guided Sightseeing', 'Shared Transfers', 'Daily Meals'], type: 'family', badge: 'Popular',
     itinerary: [{ day: 'Day 1', title: 'Arrival', desc: 'Arrive in Goa.' }, { day: 'Day 2', title: 'North Goa', desc: 'Beaches and Forts.' }, { day: 'Day 3', title: 'South Goa', desc: 'Churches and Temples.' }, { day: 'Day 4', title: 'Departure', desc: 'Departure from Goa.' }],
     inclusions: ['Hotels', 'Meals', 'Sightseeing', 'Transport'], exclusions: ['Flights']
   },
   {
-    id: 104, title: 'BUDGET FRIENDLY GOA PACKAGE', dest: 'Goa', image: 'https://media.istockphoto.com/id/469852152/photo/arambol-beach-goa.jpg?s=612x612&w=0&k=20&c=PK7nClOmOvKi4JxDumL5-YI8lkX53b9vHF75nvExDX4=', duration: '3N/4D', price: '₹6,500', rating: 4.5, reviews: 98, highlights: ['Budget Hotel', 'Group Sightseeing', 'Pick & Drop Transfers', 'Breakfast Included'], type: 'group', badge: 'Budget',
+    id: 104, title: 'BUDGET FRIENDLY GOA PACKAGE', dest: 'Goa', image: 'https://media1.thrillophilia.com/filestore/sn4ivuxkv0osfmff7dv7aszx36ph_shutterstock_1129660346.jpg', duration: '3N/4D', price: '₹6,500', rating: 4.5, reviews: 98, highlights: ['Budget Hotel', 'Group Sightseeing', 'Pick & Drop Transfers', 'Breakfast Included'], type: 'group', badge: 'Budget',
     itinerary: [{ day: 'Day 1', title: 'Arrival', desc: 'Arrive in Goa.' }, { day: 'Day 2', title: 'North Goa', desc: 'Beaches and Forts.' }, { day: 'Day 3', title: 'South Goa', desc: 'Churches and Temples.' }, { day: 'Day 4', title: 'Departure', desc: 'Departure from Goa.' }],
     inclusions: ['Hotels', 'Meals', 'Sightseeing', 'Transport'], exclusions: ['Flights']
   },

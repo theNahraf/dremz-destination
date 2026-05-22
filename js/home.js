@@ -24,26 +24,13 @@ const homePackages = [
     type: 'family', badge: 'Top Rated'
   },
   {
-    id: 4, title: 'Bali Adventure', destination: 'Bali',
-    image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80',
-    duration: '5N / 6D', price: '₹34,999', rating: 4.7, reviews: 156,
-    highlights: ['Ubud Rice Terraces', 'Sunset Temple', 'Snorkeling'],
-    type: 'adventure', badge: 'Limited Slots'
-  },
-  {
     id: 5, title: 'Royal Rajasthan', destination: 'Rajasthan',
     image: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=600&q=80',
     duration: '7N / 8D', price: '₹24,999', rating: 4.8, reviews: 278,
     highlights: ['Jaipur Forts', 'Udaipur Lakes', 'Desert Safari'],
     type: 'group', badge: 'Bestseller'
   },
-  {
-    id: 6, title: 'Maldives Luxury Escape', destination: 'Maldives',
-    image: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600&q=80',
-    duration: '4N / 5D', price: '₹54,999', rating: 5.0, reviews: 98,
-    highlights: ['Overwater Villa', 'Coral Diving', 'Sunset Cruise'],
-    type: 'honeymoon', badge: 'Premium'
-  }
+ 
 ];
 
 // ---- Testimonials Data ----
